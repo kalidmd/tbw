@@ -4,7 +4,6 @@ function Home() {
   return (
     <div>
         <Main/>
-        <p>This is Home Contains Main.</p>
     </div>
   )
 }
