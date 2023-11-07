@@ -190,7 +190,6 @@ img {
 }
           /* 6TH SECTION SUBSCRIBE CHANNEL SECTION*/
 .channels-container {
-  /* background-color: red; */
   width: 80%;
   margin: 25px auto;
 }
@@ -220,26 +219,69 @@ img {
   color: #F2F2F2;
   font-size: 13px;
 }
-.address-icon {
-  width: 18px;
+.footer--tbw-logo {
+  width: 90px;
 }
-.address-container {
-  width: 50%;
-  padding: 30px 0 0 30px;
+.footer-content {
+  /* background-color: red; */
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+      /* RIGHT SIDE OF THE FOOTER */
+.right-side-footer {
+  /* background-color: green; */
+}
+.guiding-people {
+  margin-top: 10px;
+  width: 200px;
+  margin-bottom: 8px;
+}
+.social-medias {
+  display: flex;
+  justify-content: space-between;
+  width: 125px;
+}
+.social--icon {
+  width: 22px;
+}
+           /* ADDRESS */
 .address {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: red;
-  
+  /* background-color: red; */
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
-.email {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: green;
+.location, .email, .phone {
+  position: relative;
+  padding-top: 10px;
 }
-.phone {
-  background-color: orange;
+.location-icon, .email-icon, .phone-icon {
+  width: 18px;
+  position: absolute;
+}
+.location-text {
+  width: 300px;
+  margin-left: 25px;
+}
+.email-text, .phone-text {
+  margin-left: 25px;
+}
+.location-icon {
+  top: 11px;
+}
+.email-icon {
+  top: 10px;
+}
+.phone-icon {
+  top: 8px;
+}
+.copyright {
+  padding-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
 }
