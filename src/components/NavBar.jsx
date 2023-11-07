@@ -58,15 +58,7 @@ function NavBar() {
               to={"https://www.youtube.com/@truthByWill"}>
                 <img className="nav-bar--icon" src={YoutubeIcon} alt="logo" />
             </NavLink>
-
-            {/* <a 
-              href="https://www.youtube.com/@truthByWill" target="-blank" 
-              rel="noopener noreferrer"
-              className='link'
-            >
-              <img className="nav-bar--icon" src={YoutubeIcon} alt="logo" />
-            </a> */}
-            
+                  
           </div>
         </nav>
 
