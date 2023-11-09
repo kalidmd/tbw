@@ -1,6 +1,7 @@
 import React from 'react'
 import Beki from '../assets/image/Beki.png'
 import Yoni from '../assets/image/Yoni.png'
+import YoniNew from '../assets/image/Yoni-New.png'
 
 function Home() {
   return (
@@ -28,7 +29,7 @@ function Home() {
           <div className="lecture-profile">
             <img 
               className="lecture-image" 
-              src={Yoni} alt="Yonatan Gena" 
+              src={YoniNew} alt="Yonatan Gena" 
             />
             <p className="lecture-name yoni">Yonatan Gena</p>
           </div>

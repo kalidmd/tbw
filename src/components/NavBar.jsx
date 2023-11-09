@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {BrowserRouter, Routes, Route, NavLink} from 'react-router-dom';
+import '../styles/navbar.css'
          //PAGES
 import Home from '../pages/Home';
 import Attend from '../pages/Attend';
@@ -13,51 +14,90 @@ import DarkModeIcon from "../assets/icon/sun-white.png";
 import YoutubeIcon from "../assets/icon/youtube-white.png";
 
 function NavBar() {
+  // -----navbar scroll state-----
+  const [navBar, setNavBar] = useState(false);
+  // -----humburger menu state-----
+  const [humburger_class, setHumburgerClass] = useState("humburger-bar unclicked")
+  const [menu_class, setMenuClass] = useState("menu hidden")
+  const [isMenuClicked, setIsMenuClicked] = useState(false)
+
+  const updateMenu = () => {
+    if(!isMenuClicked){
+      setHumburgerClass("humburger-bar clicked")
+      setMenuClass("menu visible")
+    } else {
+      setHumburgerClass("humburger-bar unclicked")
+      setMenuClass("menu hidden")
+    }
+    setIsMenuClicked(!isMenuClicked)
+  }
+
+  const scrollNavbar = () => {
+    if(window.scrollY >= 30){
+      setNavBar(true)
+    }
+    else {
+      setNavBar(false)
+    }
+  }
+
+  window.addEventListener('scroll', scrollNavbar);
+
   return (
       <BrowserRouter>
-        <nav className='nav-bar'>
+        <nav className={navBar ? "nav-bar active": "nav-bar"}>
+          <div className="humburger-menu" onClick={updateMenu}>
+              <div className={humburger_class}></div>
+              <div className={humburger_class}></div>
+              <div className={humburger_class}></div>
+          </div>
+
           <NavLink 
             className={"link"} 
             to={"/"}>
             <img className="tbw-logo" src={TbwLogo} alt="logo"/>
-          </NavLink> 
-          
-          <div className="nav-bar--pages">
-            <NavLink 
-              className={"page link"} 
-              to={"/attend"}>
-                ATTEND
-            </NavLink> 
-            
-            <NavLink 
-              className={"page link"} 
-              to={"/videos"}>
-                VIDEOS
-            </NavLink>
-            
-            <NavLink 
-              className={"page link"} 
-              to={"/about"}>
-                ABOUT
-            </NavLink> 
-            
-            <NavLink 
-              className={"page link"} 
-              to={"/blog"}>
-                BLOG
-            </NavLink> 
+          </NavLink>
+
+          <div className={menu_class}>
+            <div className="nav-bar--pages">
+              <NavLink 
+                className={"page link"} 
+                to={"/attend"}>
+                  ATTEND
+              </NavLink> 
+              
+              <NavLink 
+                className={"page link"} 
+                to={"/videos"}>
+                  VIDEOS
+              </NavLink>
+              
+              <NavLink 
+                className={"page link"} 
+                to={"/about"}>
+                  ABOUT
+              </NavLink> 
+              
+              <NavLink 
+                className={"page link"} 
+                to={"/blog"}>
+                  BLOG
+              </NavLink> 
+            </div>
           </div>
+          
 
           <div className="nav-bar--icons">
             <img className="nav-bar--icon" src={DarkModeIcon} alt="logo" />
 
-            <NavLink 
-              className={"link"} 
+            <a 
+              className="link"
               target="_blank"
               rel="noopener noreferrer"
-              to={"https://www.youtube.com/@truthByWill"}>
-                <img className="nav-bar--icon" src={YoutubeIcon} alt="logo" />
-            </NavLink>
+              href="https://www.youtube.com/@truthByWill"
+            >
+              <img className="nav-bar--icon" src={YoutubeIcon} alt="logo" />
+            </a>
                   
           </div>
         </nav>

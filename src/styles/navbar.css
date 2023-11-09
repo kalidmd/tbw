@@ -1,0 +1,81 @@
+:root {
+    --border-rad: 5px;
+    --blue: #0659C7;
+    --maximum-width: 95%;
+}
+.nav-bar {
+background-color: var(--blue);
+width: 100%;
+margin: 0 auto;
+height: 70px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.nav-bar.active {
+width: var(--maximum-width);
+position: fixed;
+top: 10px;
+left: 50%;
+transform: translateX(-50%);
+border-radius: var(--border-rad);
+z-index: 3;
+opacity: 0.9;
+transition: all .1s;
+}
+.tbw-logo {
+width: 40px;
+}
+.nav-bar--pages {
+display: flex;
+justify-content: space-between;
+list-style: none;
+width: 200px;
+}
+.page {
+font-size: 12px;
+color: #ffff;
+text-decoration: none;
+}
+.nav-bar--icons {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 44px;
+list-style: none;
+}
+.nav-bar--icon {
+width: 18px;
+}
+                /* ----HUMBURGER MENU---- */
+.humburger-menu { 
+height: 17px;
+width: 20px; 
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: space-between;
+cursor: pointer;
+z-index: 2;
+background-color: red;
+}
+.humburger-bar {
+width: 25px;
+height: 3px;
+background-color: #fff;
+border-radius: 0.5em;
+}
+.menu {
+width: 60%;
+height: 100vh;
+background-color: rgb(48, 180, 180);
+position: absolute;
+top: 0;
+opacity: 0.9;
+}
+.hidden {
+display: none;
+}
+.visible {
+display: inherit;
+}
