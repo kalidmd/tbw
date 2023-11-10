@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState, useRef} from 'react'
 import {BrowserRouter, Routes, Route, NavLink} from 'react-router-dom';
 import '../styles/navbar.css'
          //PAGES
@@ -40,65 +40,58 @@ function NavBar() {
       setNavBar(false)
     }
   }
-
-  window.addEventListener('scroll', scrollNavbar);
-
+  window.addEventListener('scroll', scrollNavbar);  
+  
+  let style = {
+    top: navBar ? "52px" : "72px"
+  }
   return (
       <BrowserRouter>
         <nav className={navBar ? "nav-bar active": "nav-bar"}>
-          <div className="humburger-menu" onClick={updateMenu}>
-              <div className={humburger_class}></div>
-              <div className={humburger_class}></div>
-              <div className={humburger_class}></div>
-          </div>
+          <div className="nav-width">
+            <NavLink className={"link"} to={"/"}>
+              <img className="tbw-logo" src={TbwLogo} alt="logo"/>
+            </NavLink>
 
-          <NavLink 
-            className={"link"} 
-            to={"/"}>
-            <img className="tbw-logo" src={TbwLogo} alt="logo"/>
-          </NavLink>
-
-          <div className={menu_class}>
-            <div className="nav-bar--pages">
-              <NavLink 
-                className={"page link"} 
-                to={"/attend"}>
-                  ATTEND
-              </NavLink> 
-              
-              <NavLink 
-                className={"page link"} 
-                to={"/videos"}>
-                  VIDEOS
-              </NavLink>
-              
-              <NavLink 
-                className={"page link"} 
-                to={"/about"}>
-                  ABOUT
-              </NavLink> 
-              
-              <NavLink 
-                className={"page link"} 
-                to={"/blog"}>
-                  BLOG
-              </NavLink> 
+            <div className="humburger-menu" onClick={updateMenu}>
+                <div className={humburger_class}></div>
+                <div className={humburger_class}></div>
+                <div className={humburger_class}></div>
             </div>
-          </div>
           
+            <div style={style} className={menu_class}>
+              <div className="triangle"></div>
+              <div className="nav-bar--pages">
+                <NavLink 
+                  className={"page link"} to={"/"}> HOME
+                </NavLink> 
+                <NavLink 
+                  className={"page link"} to={"/attend"}> ATTEND
+                </NavLink> 
+                <NavLink 
+                  className={"page link"} to={"/videos"}> VIDEOS
+                </NavLink> 
+                <NavLink 
+                  className={"page link"} to={"/about"}> ABOUT
+                </NavLink>    
+                <NavLink 
+                  className={"page link"} to={"/blog"}> BLOG
+                </NavLink> 
+                <div className="nav-bar--icons">
+                  <img className="nav-bar--icon" src={DarkModeIcon} alt="logo" />
 
-          <div className="nav-bar--icons">
-            <img className="nav-bar--icon" src={DarkModeIcon} alt="logo" />
+                  <a 
+                    className="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.youtube.com/@truthByWill"
+                  >
+                    <img className="nav-bar--icon" src={YoutubeIcon} alt="logo" />
+                  </a> 
+                </div>
+              </div>
 
-            <a 
-              className="link"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.youtube.com/@truthByWill"
-            >
-              <img className="nav-bar--icon" src={YoutubeIcon} alt="logo" />
-            </a>
-                  
+            </div>
           </div>
         </nav>
 
