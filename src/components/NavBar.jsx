@@ -14,12 +14,16 @@ import DarkModeIcon from "../assets/icon/sun-white.png";
 import YoutubeIcon from "../assets/icon/youtube-white.png";
 
 function NavBar() {
+
   // -----navbar scroll state-----
   const [navBar, setNavBar] = useState(false);
   // -----humburger menu state-----
   const [humburger_class, setHumburgerClass] = useState("humburger-bar unclicked")
   const [menu_class, setMenuClass] = useState("menu hidden")
   const [isMenuClicked, setIsMenuClicked] = useState(false)
+  console.log(`isMenuClicked Outside: ${isMenuClicked}`);
+  
+  let menuRef = useRef();
 
   const updateMenu = () => {
     if(!isMenuClicked){
@@ -45,6 +49,23 @@ function NavBar() {
   let style = {
     top: navBar ? "52px" : "72px"
   }
+  // ----CLICK OUTSIDE MENU TO CLOSE HUMBURGER MENU----
+  useEffect(() => {
+    let handler = (event) => {
+      if(!menuRef.current.contains(event.target)) {
+        setHumburgerClass("humburger-bar unclicked")
+        setMenuClass("menu hidden")
+        // setIsMenuClicked(!isMenuClicked)
+      }
+    }
+    document.addEventListener("mousedown", handler)
+
+    return () => {
+      document.removeEventListener("mousedown", handler)
+    }
+
+  })
+
   return (
       <BrowserRouter>
         <nav className={navBar ? "nav-bar active": "nav-bar"}>
@@ -59,8 +80,7 @@ function NavBar() {
                 <div className={humburger_class}></div>
             </div>
           
-            <div style={style} className={menu_class}>
-              <div className="triangle"></div>
+            <div ref={menuRef} style={style} className={menu_class}>
               <div className="nav-bar--pages">
                 <NavLink 
                   className={"page link"} to={"/"}> HOME

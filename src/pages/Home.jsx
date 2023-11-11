@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Beki from '../assets/image/Beki.png'
-import Yoni from '../assets/image/Yoni.png'
+// import Yoni from '../assets/image/Yoni.png'
 import YoniNew from '../assets/image/Yoni-New.png'
 
 function Home() {
