@@ -10,7 +10,7 @@ function NavBar(props) {
   const [navBar, setNavBar] = useState(false);
   
   const scrollNavbar = () => {
-    if(window.scrollY >= 30){
+    if(window.scrollY >= 25){
       setNavBar(true)
     }
     else {
