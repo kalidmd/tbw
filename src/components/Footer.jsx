@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/footer.css'
 import YoutubeIcon from '../assets/icon/youtube-white.png'
 import FacebookIcon from '../assets/icon/facebook-white.png'
 import TiktokIcon from '../assets/icon/tiktok-white.png'

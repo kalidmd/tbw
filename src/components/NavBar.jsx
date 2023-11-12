@@ -1,41 +1,14 @@
-import React, {useEffect, useState, useRef} from 'react'
-import {BrowserRouter, Routes, Route, NavLink} from 'react-router-dom';
+import React, { useState } from 'react'
 import '../styles/navbar.css'
-         //PAGES
-import Home from '../pages/Home';
-import Attend from '../pages/Attend';
-import Videos from '../pages/Videos';
-import Blog from '../pages/Blog';
-import About from '../pages/About';
-import PageNotFound from '../pages/PageNotFound';
-
 import TbwLogo from "../assets/logo/TBW_White_Transparent.png"
-import DarkModeIcon from "../assets/icon/sun-white.png";
-import YoutubeIcon from "../assets/icon/youtube-white.png";
+// import DarkModeIcon from "../assets/icon/sun-white.png";
+// import YoutubeIcon from "../assets/icon/youtube-white.png";
 
-function NavBar() {
+function NavBar(props) {
 
   // -----navbar scroll state-----
   const [navBar, setNavBar] = useState(false);
-  // -----humburger menu state-----
-  const [humburger_class, setHumburgerClass] = useState("humburger-bar unclicked")
-  const [menu_class, setMenuClass] = useState("menu hidden")
-  const [isMenuClicked, setIsMenuClicked] = useState(false)
-  console.log(`isMenuClicked Outside: ${isMenuClicked}`);
   
-  let menuRef = useRef();
-
-  const updateMenu = () => {
-    if(!isMenuClicked){
-      setHumburgerClass("humburger-bar clicked")
-      setMenuClass("menu visible")
-    } else {
-      setHumburgerClass("humburger-bar unclicked")
-      setMenuClass("menu hidden")
-    }
-    setIsMenuClicked(!isMenuClicked)
-  }
-
   const scrollNavbar = () => {
     if(window.scrollY >= 30){
       setNavBar(true)
@@ -46,84 +19,13 @@ function NavBar() {
   }
   window.addEventListener('scroll', scrollNavbar);  
   
-  let style = {
-    top: navBar ? "52px" : "72px"
-  }
-  // ----CLICK OUTSIDE MENU TO CLOSE HUMBURGER MENU----
-  useEffect(() => {
-    let handler = (event) => {
-      if(!menuRef.current.contains(event.target)) {
-        setHumburgerClass("humburger-bar unclicked")
-        setMenuClass("menu hidden")
-        // setIsMenuClicked(!isMenuClicked)
-      }
-    }
-    document.addEventListener("mousedown", handler)
-
-    return () => {
-      document.removeEventListener("mousedown", handler)
-    }
-
-  })
 
   return (
-      <BrowserRouter>
-        <nav className={navBar ? "nav-bar active": "nav-bar"}>
-          <div className="nav-width">
-            <NavLink className={"link"} to={"/"}>
-              <img className="tbw-logo" src={TbwLogo} alt="logo"/>
-            </NavLink>
-
-            <div className="humburger-menu" onClick={updateMenu}>
-                <div className={humburger_class}></div>
-                <div className={humburger_class}></div>
-                <div className={humburger_class}></div>
-            </div>
-          
-            <div ref={menuRef} style={style} className={menu_class}>
-              <div className="nav-bar--pages">
-                <NavLink 
-                  className={"page link"} to={"/"}> HOME
-                </NavLink> 
-                <NavLink 
-                  className={"page link"} to={"/attend"}> ATTEND
-                </NavLink> 
-                <NavLink 
-                  className={"page link"} to={"/videos"}> VIDEOS
-                </NavLink> 
-                <NavLink 
-                  className={"page link"} to={"/about"}> ABOUT
-                </NavLink>    
-                <NavLink 
-                  className={"page link"} to={"/blog"}> BLOG
-                </NavLink> 
-                <div className="nav-bar--icons">
-                  <img className="nav-bar--icon" src={DarkModeIcon} alt="logo" />
-
-                  <a 
-                    className="link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.youtube.com/@truthByWill"
-                  >
-                    <img className="nav-bar--icon" src={YoutubeIcon} alt="logo" />
-                  </a> 
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </nav>
-
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/attend" element={<Attend/>}/>
-          <Route path="/videos" element={<Videos/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/blog" element={<Blog/>}/>
-          <Route path="*" element={<PageNotFound/>}/>
-        </Routes>
-      </BrowserRouter>
+      <nav className={navBar ? "nav-bar active": "nav-bar"}>
+        <div className="nav-width">
+          <img className="tbw-logo" src={TbwLogo} alt="logo"/>
+        </div>
+      </nav>
   )
 }
 
