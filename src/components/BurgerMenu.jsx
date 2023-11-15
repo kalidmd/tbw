@@ -56,7 +56,7 @@ function BurgerMenu(props) {
               href="https://www.youtube.com/@truthByWill"
               rel="noopener noreferrer"
             >
-              <img className="social--icon" src={YoutubeIcon} alt="youtube"/>
+              <img className="menu--social-icon social--icon" src={YoutubeIcon} alt="youtube"/>
             </a>
 
             <a 
@@ -64,7 +64,7 @@ function BurgerMenu(props) {
               href="https://www.facebook.com/truthByWill"
               rel="noopener noreferrer"
             >
-              <img className="social--icon" src={FacebookIcon} alt="facebook"/>
+              <img className="menu--social-icon social--icon" src={FacebookIcon} alt="facebook"/>
             </a>
 
             <a 
@@ -72,7 +72,7 @@ function BurgerMenu(props) {
               href="https://www.tiktok.com/@truth_bywill"
               rel="noopener noreferrer"
             >
-              <img className="social--icon" src={TiktokIcon} alt="tiktok"/>
+              <img className="menu--social-icon social--icon" src={TiktokIcon} alt="tiktok"/>
             </a>
 
             <a 
@@ -80,7 +80,7 @@ function BurgerMenu(props) {
               href="https://t.me/truthByWill_yt"
               rel="noopener noreferrer"
             >
-              <img className="social--icon" src={TelegramIcon} alt="telegram"/>
+              <img className="menu--social-icon social--icon" src={TelegramIcon} alt="telegram"/>
             </a>
           </div>
         </Menu>
