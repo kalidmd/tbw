@@ -1,3 +1,8 @@
+:root {
+    --border-rad: 5px;
+    --blue: #0659C7;
+    --maximum-width: 95%;
+  }
 /* Position and sizing of burger button */
 .bm-burger-button {
     position: fixed;
@@ -18,12 +23,13 @@
 }
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    height: 25px;
+    width: 30px;
 }  
   /* Color/shape of close button cross */
 .bm-cross {
     background: #fff;
+    height: 20px !important;
 }  
   /*
   Sidebar wrapper styles
@@ -34,12 +40,10 @@
     height: 100%;
     top: 0;
 }
-  
 /* General sidebar styles */
 .bm-menu {
-    background-image: linear-gradient(to left, #0659C7, #21A7F5);
-    padding: 3.5em 3.5em 0;
-    /* font-size: 1.15em; */
+    /* background-image: linear-gradient(to left, #0659C7, #21A7F5); */
+    background-color: var(--blue);
     font-size: 20px;
     font-weight: 700;
 }  
@@ -50,30 +54,50 @@
 /* Wrapper for item list */
 .bm-item-list {
     color: #b8b7ad;
-    /* padding: 0.8em; */
-    height: 300px !important;
+    margin: 100px auto 0;
+    width: 70%;
+    height: 87% !important;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 } 
 /* Individual item */
 .bm-item {
-    display: inline-block;
-    width: 70px;
-    text-decoration: none;
-    color: #fff;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
     letter-spacing: 0.4px;
 } 
-.bm-item:hover {
-    color: #373a47;
+.menu-item {
+    text-decoration: none !important;
+    color: #fff;
 }
-.bm-item.active::before {
-  content: "";
-  border-left: 3px solid #fff;
-  padding-right: 3px;
+.nav-links {
+    height: 150px;
+}
+.menu--youtube-link {
+    width: 30px;
+    
+}
+.menu-item:hover {
+    /* color: #373a47; */
+    opacity: 0.9;
+}
+.menu-item.active {
+  color: #373a47;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: var(--border-rad);
+  /* padding-right: 3px; */
 }
 /* Styling of overlay */
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
     top: 0;
+}
+/* Socila Media links */
+.menu--social-medias {
+    flex-direction: row;
+    width: 60%;
 }

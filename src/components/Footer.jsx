@@ -70,7 +70,7 @@ function Footer() {
             src={PhoneIcon} 
             alt="phone icon" 
           /> 
-          <p className="phone-text">+2519 11 75 30 88 +2517 03 93 81 11</p>
+          <p className="phone-text">+2519 11 75 30 88 | +2517 03 93 81 11</p>
         </div>
 
         <div className="location">

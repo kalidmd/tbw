@@ -9,25 +9,81 @@ import Videos from '../pages/Videos';
 import Blog from '../pages/Blog';
 import About from '../pages/About';
 import PageNotFound from '../pages/PageNotFound';
+import YoutubeIcon from '../assets/icon/youtube-white.png'
+import FacebookIcon from '../assets/icon/facebook-white.png'
+import TiktokIcon from '../assets/icon/tiktok-white.png'
+import TelegramIcon from '../assets/icon/telegram-white.png'
+
 
 function BurgerMenu(props) {
   return (
     <BrowserRouter>
         <Menu>
-            <NavLink className={"menu-item"} to={"/"}>
-                HOME
-            </NavLink>
-            <NavLink className={"menu-item"} to={"/attend"}>
-                ATTEND
-            </NavLink>
-            <NavLink className={"menu-item"} to={"/videos"}>
-                VIDEOS
-            </NavLink>
-            <NavLink className={"menu-item"} to={"/blog"}>
-                BLOG
-            </NavLink>
-        </Menu>
+            <div className="nav-links">
+                <NavLink 
+                    className={"menu-item"} 
+                    reloadDocument 
+                    to={"/"}
+                >
+                    HOME
+                </NavLink>
+                <NavLink 
+                    className={"menu-item"} 
+                    reloadDocument
+                    to={"/attend"}
+                >
+                    ATTEND
+                </NavLink>
+                <NavLink 
+                    className={"menu-item"} 
+                    reloadDocument
+                    to={"/videos"}
+                >
+                    VIDEOS
+                </NavLink>
+                <NavLink 
+                    className={"menu-item"} 
+                    reloadDocument
+                    to={"/blog"}
+                >
+                    BLOG
+                </NavLink>
+            </div>
 
+            <div className="menu--social-medias">
+            <a 
+              target="_blank" 
+              href="https://www.youtube.com/@truthByWill"
+              rel="noopener noreferrer"
+            >
+              <img className="social--icon" src={YoutubeIcon} alt="youtube"/>
+            </a>
+
+            <a 
+              target="_blank" 
+              href="https://www.facebook.com/truthByWill"
+              rel="noopener noreferrer"
+            >
+              <img className="social--icon" src={FacebookIcon} alt="facebook"/>
+            </a>
+
+            <a 
+              target="_blank" 
+              href="https://www.tiktok.com/@truth_bywill"
+              rel="noopener noreferrer"
+            >
+              <img className="social--icon" src={TiktokIcon} alt="tiktok"/>
+            </a>
+
+            <a 
+              target="_blank" 
+              href="https://t.me/truthByWill_yt"
+              rel="noopener noreferrer"
+            >
+              <img className="social--icon" src={TelegramIcon} alt="telegram"/>
+            </a>
+          </div>
+        </Menu>
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/attend" element={<Attend/>}/>
