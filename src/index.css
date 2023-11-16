@@ -172,7 +172,7 @@ html {
   font-weight: 600;
   color: #21A7F5;
 }
-.channels-grid {
+/* .channels-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 30px;
@@ -182,4 +182,4 @@ html {
   border: 1px solid black;
   padding: 50px 0;
   text-align: center;
-}
+} */

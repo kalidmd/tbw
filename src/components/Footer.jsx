@@ -87,7 +87,7 @@ function Footer() {
         </div>
       </div>
 
-      <p className="copyright">© Truth By Will | All Rights Reserved.</p>
+      <p className="copyright">© Truth By Will</p>
     </footer>
   )
 }

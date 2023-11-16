@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Beki from '../assets/image/Beki.png'
-// import Yoni from '../assets/image/Yoni.png'
 import YoniNew from '../assets/image/Yoni-New.png'
 
 function Home() {
+  useEffect(()=>{
+    const script = document.createElement("script");
+    script.src = "https://apis.google.com/js/platform.js" 
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, [])
+
   return (
     <main>
       {/* 1ST SECTION QUOTE SECTION*/}
@@ -56,10 +64,10 @@ function Home() {
       {/* 5TH SECTION LATEST VIDEOS*/}
       <section className="latest-video-container">
         <div className="latest-video-header">
-          Latest Video
+          Most Recent Video
         </div>
         <iframe 
-          src="https://www.youtube.com/embed/UXY4JhHgOfA?si=u5OGtIRfg2l2-cXU" 
+          src="https://www.youtube.com/embed/?listType=playlist&list=UUFpXCQ1DeMRJk6rAZadtq8g" 
           title="YouTube video player" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -70,15 +78,29 @@ function Home() {
 
       {/* 6TH SECTION SUBSCRIBE CHANNEL SECTION*/}
       <section className='channels-container'>
-        <p className="channels-header">
-          Subscribe our channel to stay <span className="tuned">TUNED.</span>
-        </p>
-        <div className="channels-grid">
-          <div className="grid">Youtube iframe</div>
-          <div className="grid">Facebook iframe</div>
+        {/* <p className="channels-header">
+          Subscribe our channels to stay <span className="tuned">TUNED.</span>
+        </p> */}
+
+        {/* <div className="channels-container">
+            <div 
+              class="g-ytsubscribe" data-channelid="UCFpXCQ1DeMRJk6rAZadtq8g" data-layout="full" data-count="default"
+            >
+            </div>  
+            <iframe 
+              src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FtruthByWill&width=108&layout=button_count&action=like&size=large&share=false&height=21&appId" 
+              width="108" 
+              height="35" 
+              // style="border:none;overflow:hidden" 
+              // scrolling="no" 
+              // frameborder="0" 
+              // allowfullscreen="true" 
+              // allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            >
+          </iframe>      
           <div className="grid">Tiktok iframe</div>
           <div className="grid">Telegram iframe</div>
-        </div>
+        </div> */}
       </section>
     </main>
   )

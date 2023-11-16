@@ -21,7 +21,7 @@
     transform: translateX(-50%);
     border-radius: var(--border-rad);
     z-index: 3;
-    opacity: 1;
+    opacity: 0.9;
 }
 .nav-width {
     margin: 0 auto;
