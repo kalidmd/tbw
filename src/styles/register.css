@@ -1,0 +1,54 @@
+:root {
+    --border-rad: 5px;
+    --blue: #0659C7;
+    --maximum-width: 95%;
+}
+.reg-form {
+    width: 70%;
+    margin: 50px auto 0;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+.form-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    /* padding-bottom: 10px; */
+}
+.reg-form label {
+    padding: 10px 0 5px;
+    font-weight: 500;
+}
+.reg-form input {
+    padding: 8px 0;
+    text-indent: 3px;
+    border: 1px solid var(--blue);
+    border-radius: var(--border-rad);
+}
+.reg-form textarea {
+    padding: 8px 0 70px;
+    text-indent: 3px;
+    border: 1px solid var(--blue);
+    border-radius: var(--border-rad);
+}
+.send-btn {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--blue);
+    cursor: pointer;
+    border-radius: var(--border-rad);
+}
+.sent-message {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+    background-color: green;
+    font-size: 19px;
+    color: #fff;
+    border-radius: var(--border-rad);
+    padding: 3px 0;
+}

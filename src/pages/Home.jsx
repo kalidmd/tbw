@@ -3,6 +3,7 @@ import Beki from '../assets/image/Beki.png'
 import YoniNew from '../assets/image/Yoni-New.png'
 
 function Home() {
+
   useEffect(()=>{
     const script = document.createElement("script");
     script.src = "https://apis.google.com/js/platform.js" 
@@ -22,9 +23,9 @@ function Home() {
         <div className="essential-content">
           <p className='essential-header'>Essential things in life are given for free.</p>
           <p className='essential-paragraph'>Get the ultimate success in life through our weekly classes for free.</p>
-          <button className="register-btn">
-            Register Now
-          </button>
+          <a href="#reg-form">
+            <button className="register-btn"> Register Now </button>
+          </a>
         </div>
       </section>
 
@@ -54,7 +55,7 @@ function Home() {
 
       {/* 4TH SECTION BLOG SECTION*/}
       <section className="blog-container">
-        <div className="blog-content">
+        <div id="blog-content" className="blog-content">
           <p className="blog-header">Blog</p>
           <p className="blog-paragraph">This a place holder where our daily or weekly blog posts are displayed. it could be a short lesson, quote or articles taken from our videos or from other sources.</p>
           <button className="blog-btn">View More</button>
@@ -76,32 +77,6 @@ function Home() {
         </iframe>
       </section>
 
-      {/* 6TH SECTION SUBSCRIBE CHANNEL SECTION*/}
-      <section className='channels-container'>
-        {/* <p className="channels-header">
-          Subscribe our channels to stay <span className="tuned">TUNED.</span>
-        </p> */}
-
-        {/* <div className="channels-container">
-            <div 
-              class="g-ytsubscribe" data-channelid="UCFpXCQ1DeMRJk6rAZadtq8g" data-layout="full" data-count="default"
-            >
-            </div>  
-            <iframe 
-              src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FtruthByWill&width=108&layout=button_count&action=like&size=large&share=false&height=21&appId" 
-              width="108" 
-              height="35" 
-              // style="border:none;overflow:hidden" 
-              // scrolling="no" 
-              // frameborder="0" 
-              // allowfullscreen="true" 
-              // allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            >
-          </iframe>      
-          <div className="grid">Tiktok iframe</div>
-          <div className="grid">Telegram iframe</div>
-        </div> */}
-      </section>
     </main>
   )
 }
