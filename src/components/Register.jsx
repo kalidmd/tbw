@@ -30,9 +30,7 @@ export default function Register () {
           console.log(error.text);
       });
    ;
-   console.log(`Name: ${user_name}`);
-   console.log(`Email: ${user_email}`);
-   console.log(`Message: ${message}`);
+
     setUser_name("")
     setUser_email("")
     setMessage("")
@@ -56,7 +54,7 @@ export default function Register () {
         <input 
           type="text" 
           name="user_name" 
-          placeholder="Please Enter Your Name"
+          placeholder="Enter Your Full Name"
           required
           value={user_name}
           onChange={handleNameChange}
@@ -65,7 +63,7 @@ export default function Register () {
         <input 
           type="email" 
           name="user_email" 
-          placeholder="Please Enter Your Email"
+          placeholder="Enter Your Email"
           required
           value={user_email}
           onChange={handleEmailChange}

@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react'
+import React, {useEffect} from 'react'
 import Beki from '../assets/image/Beki.png'
 import YoniNew from '../assets/image/Yoni-New.png'
 
 function Home() {
-
   useEffect(()=>{
     const script = document.createElement("script");
     script.src = "https://apis.google.com/js/platform.js" 
@@ -16,7 +15,7 @@ function Home() {
   return (
     <main>
       {/* 1ST SECTION QUOTE SECTION*/}
-      <p className="quote">Life is not something to be hoped for tomorrow, but to be lived <b>NOW!</b></p>
+      <p  id="qoute" className="quote">Life is not something to be hoped for tomorrow, but to be lived <b>NOW!</b></p>
       
       {/* 2ND SECTION ESSENTIAL THINGS*/}
       <section className="essential-container">

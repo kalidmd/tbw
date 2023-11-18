@@ -10,6 +10,7 @@ import PhoneIcon from '../assets/icon/phone-white.png'
 import TbwLogo from '../assets/logo/TBW_White_Transparent.png'
 
 function Footer() {
+   
   return (
     <footer className="footer">
       <div className="footer-content">
