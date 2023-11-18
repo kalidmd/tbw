@@ -7,10 +7,10 @@
     border: solid #fff;
     border-width: 0 4px 4px 0;
     display: inline-block;
-    padding: 7px;
+    padding: 9px;
 }
 .up {
-    margin-top: 5px;
+    margin-top: 7px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
@@ -20,9 +20,9 @@
     align-items: center;
     position: fixed;
     bottom: 110px;
-    right: 14px;
-    width: 40px;
-    height: 40px;
+    right: 12px;
+    width: 50px;
+    height: 55px;
     border-radius: var(--border-rad);
     background-color: var(--blue);
     cursor: pointer;
