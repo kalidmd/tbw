@@ -19,6 +19,12 @@
 .reg-form label {
     padding: 10px 0 5px;
     font-weight: 500;
+    position: relative;
+}
+.required {
+    color: #616161;
+    font-size: 23px;
+    position: absolute;
 }
 .reg-form input {
     padding: 8px 0;
@@ -38,6 +44,16 @@
     font-weight: 700;
     color: #fff;
     background-color: var(--blue);
+    cursor: pointer;
+    border-radius: var(--border-rad);
+}
+.sent-btn {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgb(2, 212, 2);
+    border: 1px solid rgb(2, 212, 2);
     cursor: pointer;
     border-radius: var(--border-rad);
 }

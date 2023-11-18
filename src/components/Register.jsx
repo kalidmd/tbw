@@ -3,9 +3,21 @@ import emailjs from '@emailjs/browser';
 import '../styles/register.css'
 export default function Register () {
   const [isMessageSent, setIsMessageSent] = useState(false);
-  // const [count, setCount] = useState(0); 
+  const [user_name, setUser_name] = useState(""); 
+  const [user_email, setUser_email] = useState(""); 
+  const [message, setMessage] = useState(""); 
   const form = useRef();
   
+  const handleNameChange = (event) => {
+    setUser_name(event.target.value) 
+  }
+  const handleEmailChange = (event) => {
+    setUser_email(event.target.value)
+  }
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value)
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -17,47 +29,62 @@ export default function Register () {
       }, (error) => {
           console.log(error.text);
       });
+   ;
+   console.log(`Name: ${user_name}`);
+   console.log(`Email: ${user_email}`);
+   console.log(`Message: ${message}`);
+    setUser_name("")
+    setUser_email("")
+    setMessage("")
   };
   
   useEffect(() => { 
       //Implementing the setInterval method 
       const interval = setInterval(() => { 
           setIsMessageSent(false) 
-      }, 3000); 
+      }, 5000); 
 
       //Clearing the interval 
       return () => clearInterval(interval); 
   }, [isMessageSent]); 
 
-  console.log(isMessageSent);
   return (
     <div>
       <form id="reg-form" className="reg-form" ref={form} onSubmit={sendEmail}>
-        <p className="form-title">Register Here!</p>
-        <label>Name</label>
+        <p className="form-title">Register Here For Free!</p>
+        <label>Name <span className="required">*</span></label>
         <input 
           type="text" 
           name="user_name" 
           placeholder="Please Enter Your Name"
+          required
+          value={user_name}
+          onChange={handleNameChange}
         />
-        <label>Email</label>
+        <label>Email <span className="required">*</span> </label>
         <input 
           type="email" 
           name="user_email" 
           placeholder="Please Enter Your Email"
+          required
+          value={user_email}
+          onChange={handleEmailChange}
+        
         />
-        <label>Message</label>
+        <label>Message (optional)</label>
         <textarea 
-          name="message" 
+          name="message"
+          value={message}
+          onChange={handleMessageChange} 
           placeholder="Leave Us a Message."
         />
         <input 
-          className="send-btn" 
+          className={isMessageSent ? "sent-btn" : "send-btn"} 
           type="submit" 
-          value="Send"  
+          value={isMessageSent ? "Message Sent" : "Send"}  
         />
       </form>
-      {isMessageSent && <p className="sent-message">You've Been Registered Succssefully 🎉</p>} 
+      {/* {isMessageSent && <p className="sent-message">You've Been Registered Succssefully 🎉</p>}  */}
     </div>
   );
 };
