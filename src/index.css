@@ -24,6 +24,8 @@ img {
   --border-rad: 5px;
   --blue: #0659C7;
   --maximum-width: 95%;
+  --grey-text: rgb(93, 87, 87);
+  --grey--bg: rgb(216 215 215);
 }
 .link {
   text-decoration: none;
@@ -172,14 +174,18 @@ img {
   font-weight: 600;
   color: #21A7F5;
 }
-/* .channels-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 30px;
-  column-gap: 20px;
+                              /* ---ABOUT US--- */
+.about-container {
+  width: var(--maximum-width);
+  margin: 0 auto;
 }
-.grid {
-  border: 1px solid black;
-  padding: 50px 0;
-  text-align: center;
-} */
+.who-we-are, .aim{
+  background-color: var(--grey--bg);
+  color: #000;
+  border-radius: var(--border-rad);
+  margin: 25px auto;
+  padding: 12px;
+}
+.who--title, .aim--title {
+  padding-bottom: 8px;
+}

@@ -18,13 +18,13 @@ import TelegramIcon from '../assets/icon/telegram-white.png'
 import HomeIconDark from '../assets/icon/home.png'
 import AboutUsIconDark from '../assets/icon/about-us.png'
 import AttendIconDark from '../assets/icon/attend.png'
-import VideoIconDark from '../assets/icon/video.png'
+// import VideoIconDark from '../assets/icon/video.png'
 import BlogIconDark from '../assets/icon/blog.png'
 
 import HomeIconLight from '../assets/icon/home-white.png'
 import AboutUsIconLight from '../assets/icon/about-us-white.png'
 import AttendIconLight from '../assets/icon/attend-white.png'
-import VideoIconLight from '../assets/icon/video-white.png'
+// import VideoIconLight from '../assets/icon/video-white.png'
 import BlogIconLight from '../assets/icon/blog-white.png'
 
 
@@ -33,7 +33,7 @@ function BurgerMenu() {
   const [activeHomeIcon, setActiveHomeIcon] = useState(false)
   const [activeAboutIcon, setActiveAboutIcon] = useState(false)
   const [activeAttendIcon, setActiveAttendIcon] = useState(false)
-  const [activeVideoIcon, setActiveVideoIcon] = useState(false)
+  // const [activeVideoIcon, setActiveVideoIcon] = useState(false)
   const [activeBlogIcon, setActiveBlogIcon] = useState(false)
 
   return (
@@ -82,7 +82,7 @@ function BurgerMenu() {
                   </div>
                 </NavLink>
 
-                <NavLink 
+                {/* <NavLink 
                     className={
                       ({isActive}) => 
                         (isActive ? (setActiveVideoIcon(true), "menu-item active" ) : 
@@ -94,7 +94,7 @@ function BurgerMenu() {
                   <div className="icon-and-menu">
                     <img className="menu-icon" src={activeVideoIcon ? VideoIconDark : VideoIconLight} alt="Video" /> VIDEOS
                   </div>
-                </NavLink>
+                </NavLink> */}
                 
                 <NavLink 
                     className= {

@@ -58,7 +58,9 @@ function Home() {
         <div id="blog-content" className="blog-content">
           <p className="blog-header">Blog</p>
           <p className="blog-paragraph">This a place holder where our daily or weekly blog posts are displayed. it could be a short lesson, quote or articles taken from our videos or from other sources.</p>
-          <button className="blog-btn">View More</button>
+          <a href="/blog">
+            <button className="blog-btn">View More</button>
+          </a>
         </div>
       </section>
 
