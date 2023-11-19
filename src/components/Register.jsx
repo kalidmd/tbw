@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/register.css'
+
 export default function Register () {
   const [isMessageSent, setIsMessageSent] = useState(false);
   const [user_name, setUser_name] = useState(""); 
-  const [user_email, setUser_email] = useState(""); 
+  const [user_email, setUser_email] = useState("");
   const [message, setMessage] = useState(""); 
   const form = useRef();
-  
+
   const handleNameChange = (event) => {
     setUser_name(event.target.value) 
   }
@@ -59,6 +60,7 @@ export default function Register () {
           value={user_name}
           onChange={handleNameChange}
         />
+
         <label>Email <span className="required">*</span> </label>
         <input 
           type="email" 
@@ -67,8 +69,8 @@ export default function Register () {
           required
           value={user_email}
           onChange={handleEmailChange}
-        
         />
+
         <label>Message (optional)</label>
         <textarea 
           name="message"
@@ -76,13 +78,13 @@ export default function Register () {
           onChange={handleMessageChange} 
           placeholder="Leave Us a Message."
         />
+
         <input 
           className={isMessageSent ? "sent-btn" : "send-btn"} 
           type="submit" 
           value={isMessageSent ? "Message Sent" : "Send"}  
         />
       </form>
-      {/* {isMessageSent && <p className="sent-message">You've Been Registered Succssefully 🎉</p>}  */}
     </div>
   );
 };

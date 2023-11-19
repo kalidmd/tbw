@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
 import '../styles/burgermenu.css'
@@ -9,47 +9,109 @@ import Videos from '../pages/Videos';
 import Blog from '../pages/Blog';
 import About from '../pages/About';
 import PageNotFound from '../pages/PageNotFound';
+// ---ICONS---
 import YoutubeIcon from '../assets/icon/youtube-white.png'
 import FacebookIcon from '../assets/icon/facebook-white.png'
 import TiktokIcon from '../assets/icon/tiktok-white.png'
 import TelegramIcon from '../assets/icon/telegram-white.png'
 
+import HomeIconDark from '../assets/icon/home.png'
+import AboutUsIconDark from '../assets/icon/about-us.png'
+import AttendIconDark from '../assets/icon/attend.png'
+import VideoIconDark from '../assets/icon/video.png'
+import BlogIconDark from '../assets/icon/blog.png'
 
-function BurgerMenu(props) {
+import HomeIconLight from '../assets/icon/home-white.png'
+import AboutUsIconLight from '../assets/icon/about-us-white.png'
+import AttendIconLight from '../assets/icon/attend-white.png'
+import VideoIconLight from '../assets/icon/video-white.png'
+import BlogIconLight from '../assets/icon/blog-white.png'
+
+
+
+function BurgerMenu() {
+  const [activeHomeIcon, setActiveHomeIcon] = useState(false)
+  const [activeAboutIcon, setActiveAboutIcon] = useState(false)
+  const [activeAttendIcon, setActiveAttendIcon] = useState(false)
+  const [activeVideoIcon, setActiveVideoIcon] = useState(false)
+  const [activeBlogIcon, setActiveBlogIcon] = useState(false)
+
   return (
     <BrowserRouter>
         <Menu>
             <div className="nav-links">
                 <NavLink 
-                    className={"menu-item"} 
+                    className={
+                      ({isActive}) => 
+                        (isActive ? (setActiveHomeIcon(true), "menu-item active" ) : 
+                        (setActiveHomeIcon(false), "menu-item"))
+                    } 
                     reloadDocument 
                     to={"/"}
                 >
-                    HOME
+                  <div className="icon-and-menu">
+                    <img className="menu-icon" src={activeHomeIcon ? HomeIconDark : HomeIconLight} alt="Home"/> HOME
+                  </div>
                 </NavLink>
+              
                 <NavLink 
-                    className={"menu-item"} 
+                    className={
+                      ({isActive}) => 
+                        (isActive ? (setActiveAboutIcon(true), "menu-item active" ) : 
+                        (setActiveAboutIcon(false), "menu-item"))
+                    } 
+                    reloadDocument
+                    to={"/about"}
+                >
+                  <div className="icon-and-menu">
+                    <img className="menu-icon" src={activeAboutIcon ? AboutUsIconDark : AboutUsIconLight } alt="About" /> ABOUT US
+                  </div>
+                </NavLink>
+                
+                <NavLink 
+                    className={
+                      ({isActive}) => 
+                        (isActive ? (setActiveAttendIcon(true), "menu-item active" ) : 
+                        (setActiveAttendIcon(false), "menu-item"))
+                    } 
                     reloadDocument
                     to={"/attend"}
                 >
-                    ATTEND
+                  <div className="icon-and-menu">
+                    <img className="menu-icon" src={activeAttendIcon ? AttendIconDark : AttendIconLight} alt="Attend" /> ATTEND
+                  </div>
                 </NavLink>
+
                 <NavLink 
-                    className={"menu-item"} 
+                    className={
+                      ({isActive}) => 
+                        (isActive ? (setActiveVideoIcon(true), "menu-item active" ) : 
+                        (setActiveVideoIcon(false), "menu-item"))
+                    } 
                     reloadDocument
                     to={"/videos"}
                 >
-                    VIDEOS
+                  <div className="icon-and-menu">
+                    <img className="menu-icon" src={activeVideoIcon ? VideoIconDark : VideoIconLight} alt="Video" /> VIDEOS
+                  </div>
                 </NavLink>
+                
                 <NavLink 
-                    className={"menu-item"} 
+                    className= {
+                      ({isActive}) => 
+                        (isActive ? (setActiveBlogIcon(true), "menu-item active" ) : 
+                        (setActiveBlogIcon(false), "menu-item"))
+                    } 
                     reloadDocument
                     to={"/blog"}
                 >
-                    BLOG
+                  <div className="icon-and-menu">
+                    <img className="menu-icon" src={activeBlogIcon ? BlogIconDark : BlogIconLight} alt="Blog" /> BLOG
+                  </div>
                 </NavLink>
             </div>
 
+            <hr className="menu--hr"/>
             <div className="menu--social-medias">
             <a 
               target="_blank" 

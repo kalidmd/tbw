@@ -2,7 +2,12 @@
     --border-rad: 5px;
     --blue: #0659C7;
     --maximum-width: 95%;
-  }
+}
+.menu--hr {
+    position: relative;
+    bottom: -170px;
+    width: 80% !important;
+}
 /* Position and sizing of burger button */
 .bm-burger-button {
     position: fixed;
@@ -55,7 +60,7 @@
 .bm-item-list {
     color: #b8b7ad;
     margin: 55px auto 0;
-    width: 70%;
+    width: 65%;
     height: 87% !important;
     display: flex;
     flex-direction: column;
@@ -74,7 +79,7 @@
     color: #fff;
 }
 .nav-links {
-    height: 150px;
+    height: 165px;
 }
 .menu--youtube-link {
     width: 30px;
@@ -87,7 +92,7 @@
 .menu-item.active {
   color: #373a47;
   background-color: #fff;
-  padding: 5px 10px 5px 3px;
+  padding: 7px 0;
   border-radius: var(--border-rad);
   /* padding-right: 3px; */
 }
@@ -95,6 +100,17 @@
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
     top: 0;
+}
+.icon-and-menu {
+    /* width: 46%; */
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+}
+.menu-icon {
+    width: 20px;
+    margin-right: 10px;
 }
 /* Socila Media links */
 .menu--social-medias {

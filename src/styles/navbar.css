@@ -19,14 +19,14 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 110px;
+    bottom: 155px;
     right: 14px;
     width: 53px;
     height: 55px;
     border-radius: var(--border-rad);
     background-color: var(--blue);
     cursor: pointer;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    box-shadow: 0 4px 19px var(--blue);
     border: none;
     z-index: 3;
 }
