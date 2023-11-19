@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import Register from '../components/Register';
 import Beki from '../assets/image/Beki.png'
 import YoniNew from '../assets/image/Yoni-New.png'
 
@@ -75,7 +76,7 @@ function Home() {
         >
         </iframe>
       </section>
-
+      <Register/>
     </main>
   )
 }
