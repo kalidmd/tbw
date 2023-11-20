@@ -114,6 +114,7 @@ function BurgerMenu() {
            
             <div className="menu--social-medias-cont">
               <hr className="menu--hr" />
+              
               <div className="menu--social-medias">
                 <a 
                   target="_blank" 
