@@ -50,6 +50,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: var(--border-rad);
+  box-shadow: 0 3px 10px #575353;
 }
 .essential-content {
   width: 60%;
@@ -66,7 +67,7 @@ img {
 }
 .register-btn {
   background-color: var(--blue);
-  font-size: 17px;
+  font-size: 16px;
   padding: 8px 11px;
   border-radius: var(--border-rad);
   color: #F2F2F2;
@@ -117,16 +118,17 @@ img {
 }
                 /* 4TH SECTION BLOG SECTION*/
 .blog-container {
-  background-image: linear-gradient(to right, #21A7F5, #0659C7);
+  /* background-image: linear-gradient(to right, #21A7F5, #0659C7); */
+  background-color: var(--grey--bg);
   width: var(--maximum-width);
   margin: 40px auto 25px;
   border-radius: var(--border-rad);
+  box-shadow: 0 3px 10px #575353;
 }
 .blog-content {
   width: 93%;
   margin: 0 auto;
   padding: 16px 0;
-  color: #F2F2F2;
 }
 .blog-header {
   padding-bottom: 5px;
@@ -138,9 +140,11 @@ img {
 }
 .blog-btn {
   margin-top: 13px;
-  color: #0659C7;
+  background-color: var(--blue);
+  color: #fff;
   border-radius: var(--border-rad);
-  padding: 5px 10px;
+  font-size: 15px;
+  padding: 6px 9px;
   border: none;
   cursor: pointer;
 }

@@ -32,7 +32,7 @@ function Home() {
       {/* 3RD SECTION LECTURES SECTION*/}
       <section className="lectures-container">
         <p className="lectures-header">
-          Keep up with our weekly series of lessons with our lectures.
+          Keep up with our weekly series of lessons with our teachers.
         </p>
         <div className="lectures-profile">
           <div className="lecture-profile">

@@ -26,7 +26,7 @@
     border-radius: var(--border-rad);
     background-color: var(--blue);
     cursor: pointer;
-    box-shadow: 0 4px 19px var(--blue);
+    box-shadow: 0 3px 10px #575353;
     border: none;
     z-index: 3;
 }
