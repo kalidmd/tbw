@@ -111,39 +111,42 @@ function BurgerMenu() {
                 </NavLink>
             </div>
 
-            <hr className="menu--hr"/>
-            <div className="menu--social-medias">
-            <a 
-              target="_blank" 
-              href="https://www.youtube.com/@truthByWill"
-              rel="noopener noreferrer"
-            >
-              <img className="menu--social-icon social--icon" src={YoutubeIcon} alt="youtube"/>
-            </a>
+           
+            <div className="menu--social-medias-cont">
+              <hr className="menu--hr" />
+              <div className="menu--social-medias">
+                <a 
+                  target="_blank" 
+                  href="https://www.youtube.com/@truthByWill"
+                  rel="noopener noreferrer"
+                >
+                  <img className="menu--social-icon social--icon" src={YoutubeIcon} alt="youtube"/>
+                </a>
 
-            <a 
-              target="_blank" 
-              href="https://www.facebook.com/truthByWill"
-              rel="noopener noreferrer"
-            >
-              <img className="menu--social-icon social--icon" src={FacebookIcon} alt="facebook"/>
-            </a>
+                <a 
+                  target="_blank" 
+                  href="https://www.facebook.com/truthByWill"
+                  rel="noopener noreferrer"
+                >
+                  <img className="menu--social-icon social--icon" src={FacebookIcon} alt="facebook"/>
+                </a>
 
-            <a 
-              target="_blank" 
-              href="https://www.tiktok.com/@truth_bywill"
-              rel="noopener noreferrer"
-            >
-              <img className="menu--social-icon social--icon" src={TiktokIcon} alt="tiktok"/>
-            </a>
+                <a 
+                  target="_blank" 
+                  href="https://www.tiktok.com/@truth_bywill"
+                  rel="noopener noreferrer"
+                >
+                  <img className="menu--social-icon social--icon" src={TiktokIcon} alt="tiktok"/>
+                </a>
 
-            <a 
-              target="_blank" 
-              href="https://t.me/truthByWill_yt"
-              rel="noopener noreferrer"
-            >
-              <img className="menu--social-icon social--icon" src={TelegramIcon} alt="telegram"/>
-            </a>
+                <a 
+                  target="_blank" 
+                  href="https://t.me/truthByWill_yt"
+                  rel="noopener noreferrer"
+                >
+                  <img className="menu--social-icon social--icon" src={TelegramIcon} alt="telegram"/>
+                </a>
+            </div>
           </div>
         </Menu>
         <Routes>

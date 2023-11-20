@@ -4,9 +4,9 @@
     --maximum-width: 95%;
 }
 .menu--hr {
-    position: relative;
-    bottom: -181px;
-    width: 80% !important;
+    /* position: relative;
+    bottom: -181px;*/
+    width: 80% !important; 
 }
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -114,7 +114,9 @@
 }
 /* Socila Media links */
 .menu--social-medias {
-    flex-direction: row;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
     width: 80%;
 }
 .menu--social-icon {
