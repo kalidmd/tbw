@@ -24,7 +24,7 @@ img {
   --border-rad: 5px;
   --blue: #0659C7;
   --maximum-width: 95%;
-  --grey-text: rgb(93, 87, 87);
+  --grey-color: #575353;
   --grey--bg: rgb(216 215 215);
 }
 .link {
@@ -50,7 +50,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: var(--border-rad);
-  box-shadow: 0 3px 10px #575353;
+  box-shadow: 0 3px 10px var(--grey-color);
 }
 .essential-content {
   width: 60%;
@@ -73,6 +73,7 @@ img {
   color: #F2F2F2;
   border: none;
   cursor: pointer;
+  box-shadow: 0 3px 9px var(--grey-color);
 }
 .register-btn:hover {
   opacity: 0.9;
@@ -147,6 +148,7 @@ img {
   padding: 6px 9px;
   border: none;
   cursor: pointer;
+  box-shadow: 0 3px 9px var(--grey-color);
 }
                /* 5TH SECTION LATEST VIDEOS*/
 .latest-video-container {
