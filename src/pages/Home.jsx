@@ -1,25 +1,21 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Register from '../components/Register';
 import Beki from '../assets/image/Beki.png'
 import YoniNew from '../assets/image/Yoni-New.png'
+import blogData from '../data/blogData.json'
 
 function Home() {
-  useEffect(()=>{
-    const script = document.createElement("script");
-    script.src = "https://apis.google.com/js/platform.js" 
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    }
-  }, [])
+  console.log(blogData[blogData.length - 1].blogTitle);
+  console.log(blogData[blogData.length - 1].blogContent);
+
 
   return (
     <main>
       {/* 1ST SECTION QUOTE SECTION*/}
-      <p  id="qoute" className="quote">Life is not something to be hoped for tomorrow, but to be lived <b>NOW!</b></p>
+      {/* <p  id="qoute" className="quote">Life is not something to be hoped for tomorrow, but to be lived <b>NOW!</b></p> */}
       
       {/* 2ND SECTION ESSENTIAL THINGS*/}
-      <section className="essential-container">
+      <section id="essential" className="essential-container">
         <div className="essential-content">
           <p className='essential-header'>Essential things in life are given for free.</p>
           <p className='essential-paragraph'>Get the ultimate success in life through our weekly classes for free.</p>
@@ -54,12 +50,18 @@ function Home() {
       </section>
 
       {/* 4TH SECTION BLOG SECTION*/}
-      <section className="blog-container">
-        <div id="blog-content" className="blog-content">
-          <p className="blog-header">Blog</p>
-          <p className="blog-paragraph">This a place holder where our daily or weekly blog posts are displayed. it could be a short lesson, quote or articles taken from our videos or from other sources.</p>
+      <section className="home--blog-container">
+        <div className="home--blog-content">
+          <p className="home--blog-header">Most Recent Blog Post</p>
+          <p className="home--blog-title"> "{ blogData[blogData.length - 1].blogTitle }" </p>
+          <p className="home--blog-description"> { blogData[blogData.length - 1].blogContent }</p> 
+          <sup className="home--blog-etc">
+            <div className="etc">.</div>
+            <div className="etc">.</div>
+            <div className="etc">.</div>
+          </sup>
           <a href="/blog">
-            <button className="blog-btn">View More</button>
+            <button className="home--blog-btn">Read More</button>
           </a>
         </div>
       </section>
@@ -69,8 +71,10 @@ function Home() {
         <div className="latest-video-header">
           Most Recent Video
         </div>
+
         <iframe 
           src="https://www.youtube.com/embed/?listType=playlist&list=UUFpXCQ1DeMRJk6rAZadtq8g" 
+          loading="lazy"
           title="YouTube video player" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

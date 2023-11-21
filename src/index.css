@@ -44,7 +44,7 @@ img {
                /* 2ND SECTION ESSENTIAL THINGS*/
 .essential-container {
   width: var(--maximum-width);
-  margin: 0 auto 25px;
+  margin: 25px auto 25px;
   background-image: url("./assets/image/plant-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -118,7 +118,7 @@ img {
   left: 28px;
 }
                 /* 4TH SECTION BLOG SECTION*/
-.blog-container {
+.home--blog-container {
   /* background-image: linear-gradient(to right, #21A7F5, #0659C7); */
   background-color: var(--grey--bg);
   width: var(--maximum-width);
@@ -126,20 +126,40 @@ img {
   border-radius: var(--border-rad);
   box-shadow: 0 3px 10px #575353;
 }
-.blog-content {
-  width: 93%;
+.home--blog-content {
+  width: 90%;
   margin: 0 auto;
   padding: 16px 0;
 }
-.blog-header {
+.home--blog-header {
   padding-bottom: 5px;
   font-size: 20px;
   font-weight: 500;
+  text-align: center;
 }
-.blog-paragraph {
+.home--blog-title {
+  padding: 5px 0;
+  font-size: 25px;
+  /* text-align: center; */
+  font-weight: 600;
+}
+.home--blog-description {
   font-size: 15px;
+  max-height: 200px;
+  overflow: hidden;
 }
-.blog-btn {
+.home--blog-etc {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20px;
+}
+.etc {
+  color: var(--blue);
+  font-size: 30px;
+}
+.home--blog-btn {
   margin-top: 13px;
   background-color: var(--blue);
   color: #fff;

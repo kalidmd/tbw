@@ -3,7 +3,7 @@
     --blue: #0659C7;
     --maximum-width: 95%;
 }
-.arrow {
+/* .arrow {
     border: solid #fff;
     border-width: 0 4px 4px 0;
     display: inline-block;
@@ -32,10 +32,8 @@
 }
 .back-to-top.active {
     display: flex;
-}
-.back-to-top:hover {
-    opacity: 0.9;
-}
+} */
+
 .nav-bar {
     position: relative;
     background-color: var(--blue);

@@ -36,8 +36,33 @@ function BurgerMenu() {
   // const [activeVideoIcon, setActiveVideoIcon] = useState(false)
   const [activeBlogIcon, setActiveBlogIcon] = useState(false)
 
+  const [backToTop, setBackToTop] = useState(false)
+  let backToTopId = "#essential"
+  if(activeAboutIcon === true) {
+    backToTopId = "#who-we-are"
+  } else if (activeAttendIcon === true){
+    backToTopId = "#attend"
+  } else if (activeBlogIcon === true) {
+    backToTopId = "#blog"
+  }
+
+  const scrollBack = () => {
+    if(window.scrollY >= 350){
+      setBackToTop(true)
+    } else {
+      setBackToTop(false)
+    }
+  }
+
+  window.addEventListener('scroll', scrollBack);  
+
   return (
     <BrowserRouter>
+      <a href={backToTopId}>
+        <button className={backToTop ? "back-to-top active" : "back-to-top"}>
+            <div className="arrow up"></div>
+        </button>
+      </a>
         <Menu>
             <div className="nav-links">
                 <NavLink 

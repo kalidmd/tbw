@@ -5,7 +5,6 @@ import TbwLogo from "../assets/logo/TBW_White_Transparent.png"
 function NavBar() {
   // -----navbar scroll state-----
   const [navBar, setNavBar] = useState(false);
-  const [backToTop, setBackToTop] = useState(false)
 
   const scrollNavbar = () => {
     if(window.scrollY >= 25){
@@ -14,32 +13,17 @@ function NavBar() {
       setNavBar(false)
     }
   }
-
   window.addEventListener('scroll', scrollNavbar);  
-
-  const scrollBack = () => {
-    if(window.scrollY >= 250){
-      setBackToTop(true)
-    } else {
-      setBackToTop(false)
-    }
-  }
-
-  window.addEventListener('scroll', scrollBack);    
 
   return (
     <div>
       <nav id="nav-bar" className={navBar ? "nav-bar active": "nav-bar"}>
         <div className="nav-width">
-          <img className="tbw-logo" src={TbwLogo} alt="logo"/>
+          <a style={{fontSize: "0"}} href="/"> 
+            <img className="tbw-logo" src={TbwLogo} alt="logo"/> 
+          </a>
         </div>
       </nav>
-
-      <a href="#qoute">
-        <button className={backToTop ? "back-to-top active" : "back-to-top"}>
-            <div className="arrow up"></div>
-        </button>
-      </a>
     </div>
   )
 }

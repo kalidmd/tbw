@@ -1,0 +1,30 @@
+:root {
+    --border-rad: 5px;
+    --blue: #0659C7;
+    --maximum-width: 95%;
+    --grey-color: #575353;
+    --grey--bg: rgb(216 215 215);
+  }
+.blog-container {
+    /* background-color: red; */
+    width: var(--maximum-width);
+    margin: 25px auto 0;
+}
+.blog-content {
+    margin-bottom: 25px;
+    background-color: var(--grey--bg);
+    border-radius: var(--border-rad);
+    padding: 15px;
+}
+.blog-title {
+    padding-bottom: 5px;
+}
+.blog-description {
+    color: #000;
+}
+.blog-teacher {
+    color: var(--blue);
+    font-size: 19px;
+    font-weight: 700;
+    padding-top: 10px;
+}

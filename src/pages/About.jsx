@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="about-container">
       <div className="who-we-are">
-        <h1 className="who--title">Who We Are</h1>
+        <h1 id="who-we-are" className="who--title">Who We Are</h1>
         <p className="who--description">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam eius cupiditate omnis aliquid officiis saepe non praesentium veniam distinctio, repellendus rem magni consequatur nulla hic fugiat perferendis dolores delectus voluptatibus.
           Quis non, facere maiores aspernatur iusto magnam earum expedita nobis a odit ex! Unde sequi omnis aliquid nam porro temporibus fugiat quos, est totam dolor aliquam sapiente cupiditate dolore. Praesentium.

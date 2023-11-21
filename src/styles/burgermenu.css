@@ -2,7 +2,39 @@
     --border-rad: 5px;
     --blue: #0659C7;
     --maximum-width: 95%;
+} 
+        /* ---BACK TO TOP--- */
+.arrow {
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 9px;
 }
+.up {
+    margin-top: 7px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+.back-to-top {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 130px;
+    right: 14px;
+    width: 53px;
+    height: 55px;
+    border-radius: var(--border-rad);
+    background-color: var(--blue);
+    cursor: pointer;
+    box-shadow: 0 3px 10px #575353;
+    border: none;
+    z-index: 3;
+}
+.back-to-top.active {
+    display: flex;
+}
+          /* ---HORIZONTAL LINE--- */
 .menu--hr {
     /* position: relative;
     bottom: -181px;*/
