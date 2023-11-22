@@ -167,6 +167,7 @@ img {
   font-size: 18px;
   font-weight: 500;
   border-bottom: 2px solid var(--blue);
+  margin-bottom: 3px;
 }
 .read-more-arrow {
   color: var(--blue);

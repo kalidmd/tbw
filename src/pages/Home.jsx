@@ -55,14 +55,11 @@ function Home() {
           <p className="home--blog-header">Most Recent Blog Post</p>
           <p className="home--blog-title"> "{ blogData[blogData.length - 1].blogTitle }" </p>
           <p className="home--blog-description"> { blogData[blogData.length - 1].blogDescription }</p> 
-          <p className="home--blog-written-by"> Written By: { blogData[blogData.length - 1].teacher } </p>
-          <div className="date-and-minute"> {blogData[blogData.length - 1].date} • {blogData[blogData.length - 1].min} READ </div>
           <a className="home--blog-link" href="/blog">
             <p className="home--blog-read-more"> Read More </p> <span className="read-more-arrow">→</span>
           </a>
-          {/* <a href="/blog">
-            <button className="home--blog-btn">Read More →</button>
-          </a> */}
+          <div className="date-and-minute"> {blogData[blogData.length - 1].date} • {blogData[blogData.length - 1].min} READ </div>
+          <p className="home--blog-written-by"> Written By: { blogData[blogData.length - 1].teacher } </p>
         </div>
       </section>
 
