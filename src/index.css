@@ -147,16 +147,6 @@ img {
   color: var(--grey-color);
   padding-bottom: 4px;
 }
-.home--blog-written-by {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--blue);
-}
-.date-and-minute {
-  color: var(--blue);
-  font-size: 18px;
-  font-weight: 500;
-}
 .home--blog-link {
   text-decoration: none;
 }
@@ -171,6 +161,16 @@ img {
 }
 .read-more-arrow {
   color: var(--blue);
+}
+.date-and-minute {
+  color: #080808;
+  font-size: 17px;
+  font-weight: 500;
+}
+.home--blog-written-by {
+  font-size: 17px;
+  font-weight: 700;
+  color: #080808;
 }
                /* 5TH SECTION LATEST VIDEOS*/
 .latest-video-container {
