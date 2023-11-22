@@ -8,7 +8,7 @@ function Blog() {
       <div key={blog.id} className="blog-content">
         <h1 className="blog-title"> "{ blog.blogTitle }" </h1>
         <p className="blog-description"> {blog.blogContent} </p>
-        <p className="blog-teacher"> By: { blog.teacher } </p>
+        <p className="blog-teacher"> Written By: { blog.teacher } </p>
       </div>
     )
   }).reverse();
