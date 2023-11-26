@@ -1,7 +1,7 @@
 import React from 'react'
 import Register from '../components/Register';
-import Beki from '../assets/image/Beki.png'
-import YoniNew from '../assets/image/Yoni-New.png'
+import Bereket from '../assets/image/Bereket.png'
+import Yonatan from '../assets/image/Yonatan.png'
 import blogData from '../data/blogData.json'
 
 function Home() {
@@ -28,13 +28,13 @@ function Home() {
       {/* 3RD SECTION LECTURES SECTION*/}
       <section className="lectures-container">
         <p className="lectures-header">
-          Keep up with our weekly series of lessons with our teachers.
+          Keep up this journey with our teachers.
         </p>
         <div className="lectures-profile">
           <div className="lecture-profile">
             <img 
               className="lecture-image" 
-              src={YoniNew} alt="Yonatan Gena" 
+              src={Yonatan} alt="Yonatan Gena" 
             />
             <p className="lecture-name yoni">Yonatan Gena</p>
           </div>
@@ -42,7 +42,7 @@ function Home() {
           <div className="lecture-profile">
           <img 
               className="lecture-image" 
-              src={Beki} alt="Bereket Teka" 
+              src={Bereket} alt="Bereket Teka" 
             />
             <p className="lecture-name beki">Bereket Teka</p>
           </div>

@@ -80,19 +80,19 @@ function BurgerMenu() {
                 </NavLink>
               
                 <NavLink 
-                    className={
+                    className= {
                       ({isActive}) => 
-                        (isActive ? (setActiveAboutIcon(true), "menu-item active" ) : 
-                        (setActiveAboutIcon(false), "menu-item"))
+                        (isActive ? (setActiveBlogIcon(true), "menu-item active" ) : 
+                        (setActiveBlogIcon(false), "menu-item"))
                     } 
                     reloadDocument
-                    to={"/about"}
+                    to={"/blog"}
                 >
                   <div className="icon-and-menu">
-                    <img className="menu-icon" src={activeAboutIcon ? AboutUsIconDark : AboutUsIconLight } alt="About" /> ABOUT US
+                    <img className="menu-icon" src={activeBlogIcon ? BlogIconDark : BlogIconLight} alt="Blog" /> BLOG
                   </div>
                 </NavLink>
-                
+
                 <NavLink 
                     className={
                       ({isActive}) => 
@@ -107,33 +107,20 @@ function BurgerMenu() {
                   </div>
                 </NavLink>
 
-                {/* <NavLink 
+                <NavLink 
                     className={
                       ({isActive}) => 
-                        (isActive ? (setActiveVideoIcon(true), "menu-item active" ) : 
-                        (setActiveVideoIcon(false), "menu-item"))
+                        (isActive ? (setActiveAboutIcon(true), "menu-item active" ) : 
+                        (setActiveAboutIcon(false), "menu-item"))
                     } 
                     reloadDocument
-                    to={"/videos"}
+                    to={"/about"}
                 >
                   <div className="icon-and-menu">
-                    <img className="menu-icon" src={activeVideoIcon ? VideoIconDark : VideoIconLight} alt="Video" /> VIDEOS
+                    <img className="menu-icon" src={activeAboutIcon ? AboutUsIconDark : AboutUsIconLight } alt="About" /> ABOUT
                   </div>
-                </NavLink> */}
-                
-                <NavLink 
-                    className= {
-                      ({isActive}) => 
-                        (isActive ? (setActiveBlogIcon(true), "menu-item active" ) : 
-                        (setActiveBlogIcon(false), "menu-item"))
-                    } 
-                    reloadDocument
-                    to={"/blog"}
-                >
-                  <div className="icon-and-menu">
-                    <img className="menu-icon" src={activeBlogIcon ? BlogIconDark : BlogIconLight} alt="Blog" /> BLOG
-                  </div>
-                </NavLink>
+                </NavLink> 
+    
             </div>
 
            

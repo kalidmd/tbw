@@ -83,39 +83,29 @@ img {
   margin: 0 auto;
 }
 .lectures-header {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
-  font-size: 20px;
+  font-size: 21px;
   margin-bottom: 20px;
 }
 .lectures-profile {
+  /* background-color: red; */
   display: flex;
-  text-align: center;
-  justify-content: space-between;
-}
-.lecture-profile {
-  position: relative;
+  /*text-align: center;*/
+  align-items: center;
+  justify-content: space-between; 
 }
 .lecture-image {
-  height: 265px;
+  width: 180px;
 }
 .lecture-name {
-  background-color: var(--blue);
-  color: #F2F2F2;
-  border-radius: var(--border-rad);
-  padding: 12px 18px;
+  padding-left: 3px;
+  margin-top: 4px;
+  color: var(--blue);
+  font-weight: 600;
 }
-.yoni {
-  position: absolute;
-  bottom: -10px;
-  left: 19px;
-}
-.beki {
-  position: absolute;
-  bottom: -10px;
-  left: 28px;
-}
+
                 /* 4TH SECTION BLOG SECTION*/
 .home--blog-container {
   /* background-image: linear-gradient(to right, #21A7F5, #0659C7); */
@@ -176,7 +166,7 @@ img {
 .latest-video-container {
   width: 95%;
   text-align: center;
-  margin: 0 auto;
+  margin: 30px auto 0;
 }
 .latest-video-header {
   font-size: 19px;
