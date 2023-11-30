@@ -10,24 +10,19 @@
     width: var(--maximum-width);
     margin: 0 auto;
 }
-.classroom{
+.classroom {
     margin-top: 25px;
+}
+.classroom-img {
     border-radius: var(--border-rad);
 }
-.classroom-name {
-    color: var(--blue);
-    font-weight: 600;
-    padding-top: 3px;
-}
 .attend-text {
-    /* width: 95%; */
     background-color: var(--blue);
     border-radius: var(--border-rad);
     color: #fff;
     padding: 15px;
     margin: 15px auto;
     font-size: 18px;
-    /* font-weight: 500; */
     letter-spacing: 0.2px;
     box-shadow: 0 2px 7px var(--grey-color);
 }
@@ -41,13 +36,20 @@
     font-weight: 600;
 }
 .map-container {
-    /* background-color: red; */
-    width: var(--maximum-width);
-    margin: 25px auto 0;
+    margin: 25px auto;
+}
+.map-label, .tgl-label, .classroom-label {
+    color: var(--blue);
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 5px;
 }
 .map-iframe {
     border-radius: var(--border-rad);
     box-shadow: 0 2px 7px var(--grey-color);
     width: 100%; 
     height: 340px
+}
+.tgl-img {
+    border-radius: var(--border-rad);
 }
