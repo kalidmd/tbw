@@ -165,6 +165,7 @@ img {
                /* 5TH SECTION LATEST VIDEOS*/
 .latest-video-container {
   width: 95%;
+  /* height: fit-content; */
   text-align: center;
   margin: 30px auto 0;
 }
@@ -175,7 +176,10 @@ img {
 }
 .latest-video-container iframe {
   width: 360px;
-  height: 215px;
+  height: 202px;
+  /* FOR 360PX SCREEN 
+  width: 324px;
+  height: 185px; */
   border-radius: var(--border-rad);
 }
           /* 6TH SECTION SUBSCRIBE CHANNEL SECTION*/

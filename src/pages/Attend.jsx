@@ -1,22 +1,38 @@
 import React from 'react'
+import '../styles/attend.css'
+import Register from '../components/Register';
+// import TglBuilding from '../assets/image/tgl-buil.jpg'
+import ClassRoom from '../assets/image/our-classroom.jpg'
 
 function Attend() {
   return (
-    <div className="attend-container">
-      <div className="who-we-are">
-        <h1 id="attend" className="who--title">Attend Content</h1>
-        <p className="who--description">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam eius cupiditate omnis aliquid officiis saepe non praesentium veniam distinctio, repellendus rem magni consequatur nulla hic fugiat perferendis dolores delectus voluptatibus.
-          Quis non, facere maiores aspernatur iusto magnam earum expedita nobis a odit ex! Unde sequi omnis aliquid nam porro temporibus fugiat quos, est totam dolor aliquam sapiente cupiditate dolore. Praesentium.
-          Odio dolor autem sed similique praesentium, dolorum consequuntur fugit temporibus nam qui quia quisquam, optio incidunt voluptas et eius eos cumque molestias dicta dignissimos? Tenetur illum obcaecati rem explicabo fugit?
-          Necessitatibus, adipisci doloremque, perspiciatis recusandae ut cum assumenda, totam veniam accusantium quam qui exercitationem deleniti corrupti molestias error. Fuga ducimus, totam corrupti dicta perspiciatis error sapiente. Odio voluptatem excepturi nostrum!
-          Esse vel, odio nisi, eum explicabo consequuntur minima voluptatibus sed ab velit amet! Sunt, cumque tempore. Porro, doloribus iusto eaque corporis rem optio quas qui, minima molestias id ut nihil.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam eius cupiditate omnis aliquid officiis saepe non praesentium veniam distinctio, repellendus rem magni consequatur nulla hic fugiat perferendis dolores delectus voluptatibus.
-          Quis non, facere maiores aspernatur iusto magnam earum expedita nobis a odit ex! Unde sequi omnis aliquid nam porro temporibus fugiat quos, est totam dolor aliquam sapiente cupiditate dolore. Praesentium.
-          Odio dolor autem sed similique praesentium, dolorum consequuntur fugit temporibus nam qui quia quisquam, optio incidunt voluptas et eius eos cumque molestias dicta dignissimos? Tenetur illum obcaecati rem explicabo fugit?
-          Necessitatibus, adipisci doloremque, perspiciatis recusandae ut cum assumenda, totam veniam accusantium quam qui exercitationem deleniti corrupti molestias error. Fuga ducimus, totam corrupti dicta perspiciatis error sapiente. Odio voluptatem excepturi nostrum!
-          Esse vel, odio nisi, eum explicabo consequuntur minima voluptatibus sed ab velit amet! Sunt, cumque tempore. Porro, doloribus iusto eaque corporis rem optio quas qui, minima molestias id ut nihil.
-        </p>
+    <div id="attend" className="attend-container">
+      
+      {/* <p className="attend-content">
+        ዘውትር እሁድ ከ 4:30 - 6፡00 ሰዓት የአንድ ሰዓት ተኩል ክፍለ ጊዜ የሚወስድ  የመግቢያ ትምህርት ስላለን ምቹ በሆነው የትምህርት ስፍራችን በአካል በመገኘት በነጻ መታደም ይችላሉ። ለበለጠ መረጃ በ +2519 11 75 30 88 ወይም በ +2517 03 93 81 11 ይደውሉልን፤ አልያም ከዚህ በታች ባለው ፎርም በመመዝገብ ቀጥታ የመግቢያ ትምህርታችንን ይካፈሉ።
+      </p> */}
+
+      <p className="attend-text">
+        You can attend our introduction class in person for free at our convenient classroom every Sunday from 10:00 AM - 12:00 AM that lasts for an hour and a half. For more information, call us at +2519 11 75 30 88 or +2517 03 93 81 11; Or <a href="#reg-form">register</a> in the form below to join our introductory class straight away.
+      </p>
+
+      <div>
+        <img className="classroom" src={ClassRoom} alt="classroom" />
+        <p className="classroom-name">Truth By Will Classroom</p>
+      </div>
+
+      <Register />
+      <div className="map-container">
+        <iframe 
+          className="map-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1335.9028812292086!2d38.79457822889989!3d8.991662178880802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85632f825785%3A0x6d746b5b49de4dc1!2z4Yql4YuN4YqQ4Ym14YqVIOGJoOGNjeGJg-GLtSB8IFRydXRoIEJ5IFdpbGw!5e0!3m2!1sen!2set!4v1701344232100!5m2!1sen!2set" 
+          title="truth by will location"
+          width="100%" 
+          height="450" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
   )

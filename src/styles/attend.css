@@ -1,0 +1,35 @@
+:root {
+    --border-rad: 5px;
+    --blue: #0659C7;
+    --maximum-width: 95%;
+    --grey-color: #575353;
+    --grey--bg: rgb(216 215 215);
+  }
+.attend-container {
+    /* background-color: red; */
+    width: var(--maximum-width);
+    margin: 0 auto;
+}
+.attend-text {
+    width: 95%;
+    margin: 15px auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+.classroom{
+    border-radius: var(--border-rad);
+}
+.classroom-name {
+    color: var(--blue);
+    font-weight: 600;
+    padding-top: 3px;
+}
+.map-container {
+    /* background-color: red; */
+    width: var(--maximum-width);
+    margin: 25px auto 0;
+}
+.map-iframe {
+    border: 1px solid var(--blue);
+    border-radius: var(--border-rad);
+}
