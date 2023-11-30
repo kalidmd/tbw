@@ -1,0 +1,8 @@
+:root {
+    --border-rad: 5px;
+    --blue: #0659C7;
+    --maximum-width: 95%;
+} 
+.about-container {
+    /* background-color: red; */
+}

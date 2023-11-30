@@ -24,6 +24,11 @@ function Attend() {
 
       <Register />
 
+      <div className="tgl">
+        <p className="tgl-label">We are at TGL BLDG, 4th FLOOR</p>
+        <img  className="tgl-img" src={TglBuilding} alt="TGL Building" />
+      </div>
+
       <div className="map-container">
         <p className="map-label"> Find Us On Google Map </p>
         <iframe 
@@ -35,10 +40,6 @@ function Attend() {
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-      </div>
-      <div className="tgl">
-        <p className="tgl-label">We are at TGL BLDG, 4th FLOOR</p>
-        <img  className="tgl-img" src={TglBuilding} alt="TGL Building" />
       </div>
     </div>
   )

@@ -196,18 +196,4 @@ img {
   font-weight: 600;
   color: #21A7F5;
 }
-                              /* ---ABOUT US--- */
-.about-container {
-  width: var(--maximum-width);
-  margin: 0 auto;
-}
-.who-we-are, .aim{
-  background-color: var(--grey--bg);
-  color: #000;
-  border-radius: var(--border-rad);
-  margin: 25px auto;
-  padding: 12px;
-}
-.who--title, .aim--title {
-  padding-bottom: 8px;
-}
+
