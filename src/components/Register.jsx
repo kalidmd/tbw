@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/register.css'
 
@@ -37,15 +37,20 @@ export default function Register () {
     setMessage("")
   };
   
-  useEffect(() => { 
-      //Implementing the setInterval method 
-      const interval = setInterval(() => { 
-          setIsMessageSent(false) 
-      }, 5000); 
+  // useEffect(() => { 
+  //     //Implementing the setInterval method 
+  //     const interval = setInterval(() => { 
+  //         setIsMessageSent(false) 
+  //     }, 5000); 
 
-      //Clearing the interval 
-      return () => clearInterval(interval); 
-  }, [isMessageSent]); 
+  //     //Clearing the interval 
+  //     return () => clearInterval(interval); 
+  // }, [isMessageSent]); 
+
+  if(isMessageSent === true) {
+    alert("Registered Successfully 🎉, Check Out Your Email")
+    setIsMessageSent(false)
+  }
 
   return (
     <div>
@@ -82,7 +87,8 @@ export default function Register () {
         <input 
           className={isMessageSent ? "sent-btn" : "send-btn"} 
           type="submit" 
-          value={isMessageSent ? "Registered 🎉, Check Out Your Email" : "Send"}  
+          // value={isMessageSent ? "Registered 🎉, Check Out Your Email" : "Send"}  
+          value={"Send"}  
         />
       </form>
     </div>
