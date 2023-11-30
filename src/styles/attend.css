@@ -10,13 +10,8 @@
     width: var(--maximum-width);
     margin: 0 auto;
 }
-.attend-text {
-    width: 95%;
-    margin: 15px auto;
-    font-size: 20px;
-    font-weight: 500;
-}
 .classroom{
+    margin-top: 25px;
     border-radius: var(--border-rad);
 }
 .classroom-name {
@@ -24,12 +19,32 @@
     font-weight: 600;
     padding-top: 3px;
 }
+.attend-text {
+    /* width: 95%; */
+    background-color: var(--blue);
+    border-radius: var(--border-rad);
+    color: #fff;
+    padding: 10px;
+    margin: 15px auto;
+    font-size: 18px;
+    /* font-weight: 500; */
+    letter-spacing: 0.2px;
+    box-shadow: 0 2px 7px var(--grey-color);
+}
+.attend-text a {
+    background-color: #fff;
+    border-radius: var(--border-rad);
+    text-decoration: none;
+    color: var(--blue);
+    padding: 0 3px;
+    font-weight: 600;
+}
 .map-container {
     /* background-color: red; */
     width: var(--maximum-width);
     margin: 25px auto 0;
 }
 .map-iframe {
-    border: 1px solid var(--blue);
     border-radius: var(--border-rad);
+    box-shadow: 0 2px 7px var(--grey-color);
 }

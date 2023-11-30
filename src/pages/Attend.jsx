@@ -11,15 +11,15 @@ function Attend() {
       {/* <p className="attend-content">
         ዘውትር እሁድ ከ 4:30 - 6፡00 ሰዓት የአንድ ሰዓት ተኩል ክፍለ ጊዜ የሚወስድ  የመግቢያ ትምህርት ስላለን ምቹ በሆነው የትምህርት ስፍራችን በአካል በመገኘት በነጻ መታደም ይችላሉ። ለበለጠ መረጃ በ +2519 11 75 30 88 ወይም በ +2517 03 93 81 11 ይደውሉልን፤ አልያም ከዚህ በታች ባለው ፎርም በመመዝገብ ቀጥታ የመግቢያ ትምህርታችንን ይካፈሉ።
       </p> */}
-
-      <p className="attend-text">
-        You can attend our introduction class in person for free at our convenient classroom every Sunday from 10:00 AM - 12:00 AM that lasts for an hour and a half. For more information, call us at +2519 11 75 30 88 or +2517 03 93 81 11; Or <a href="#reg-form">register</a> in the form below to join our introductory class straight away.
-      </p>
-
+      
       <div>
         <img className="classroom" src={ClassRoom} alt="classroom" />
         <p className="classroom-name">Truth By Will Classroom</p>
       </div>
+
+      <p className="attend-text">
+        You can attend our introduction class in person for free at our convenient classroom every Sunday from 10:00 AM - 12:00 AM that lasts for an hour and a half. For more information, call us at +2519 11 75 30 88 or +2517 03 93 81 11; You can also <a href="#reg-form">register</a> in the form below to join our introductory class straight away.
+      </p>
 
       <Register />
       <div className="map-container">
@@ -30,6 +30,7 @@ function Attend() {
           width="100%" 
           height="450" 
           allowfullscreen="" 
+          style={{border: 0}}
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
