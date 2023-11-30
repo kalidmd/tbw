@@ -13,8 +13,8 @@ function Attend() {
       </p> */}
       
       <div className="classroom">
-        <p className="classroom-label">Truth By Will Classroom</p>
         <img className="classroom-img" src={ClassRoom} alt="classroom" />
+        <p className="classroom-label">Truth By Will Classroom</p>
       </div>
 
       <p className="attend-text">

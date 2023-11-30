@@ -13,6 +13,12 @@
 .classroom {
     margin-top: 25px;
 }
+.classroom-label {
+    color: var(--blue);
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 5px;
+}
 .classroom-img {
     border-radius: var(--border-rad);
 }
@@ -21,7 +27,7 @@
     border-radius: var(--border-rad);
     color: #fff;
     padding: 15px;
-    margin: 15px auto;
+    margin: 25px auto 0;
     font-size: 18px;
     letter-spacing: 0.2px;
     box-shadow: 0 2px 7px var(--grey-color);
@@ -38,7 +44,7 @@
 .map-container {
     margin: 25px auto;
 }
-.map-label, .tgl-label, .classroom-label {
+.map-label, .tgl-label {
     color: var(--blue);
     font-size: 17px;
     font-weight: 600;
