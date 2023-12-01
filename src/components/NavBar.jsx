@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import '../styles/navbar.css'
 import TbwLogo from "../assets/logo/TBW_White_Transparent.png"
+import YoutubeIcon from '../assets/icon/youtube-white.png'
 
 function NavBar() {
   // -----navbar scroll state-----
@@ -16,15 +18,73 @@ function NavBar() {
   window.addEventListener('scroll', scrollNavbar);  
 
   return (
-    <div>
+    <BrowserRouter>
       <nav id="nav-bar" className={navBar ? "nav-bar active": "nav-bar"}>
         <div className="nav-width">
           <a style={{fontSize: "0"}} href="/"> 
             <img className="tbw-logo" src={TbwLogo} alt="logo"/> 
           </a>
+        
+            <div className="nav-pages">
+              <NavLink 
+                  className={
+                    ({isActive}) => 
+                      (isActive ? "nav-page-item active"  : "nav-page-item")
+                  } 
+                  reloadDocument 
+                  to={"/"}
+              >
+                HOME
+              </NavLink>
+            
+              <NavLink 
+                  className= {
+                    ({isActive}) => 
+                      (isActive ? "nav-page-item active" :  "nav-page-item")
+                  } 
+                  reloadDocument
+                  to={"/blog"}
+              >
+                BLOG   
+              </NavLink>
+
+              <NavLink 
+                  className={
+                    ({isActive}) => 
+                      (isActive ? "nav-page-item active" : "nav-page-item")
+                  } 
+                  reloadDocument
+                  to={"/attend"}
+              >
+                ATTEND
+              </NavLink>
+
+              <NavLink 
+                  className={
+                    ({isActive}) => 
+                      (isActive ? "nav-page-item active" : "nav-page-item")
+                  } 
+                  reloadDocument
+                  to={"/about"}
+              >
+                ABOUT
+              </NavLink> 
+            </div>
+
+            <a 
+              className="nav-icon-a"
+              target="_blank" 
+              href="https://www.youtube.com/@truthByWill"
+              rel="noopener noreferrer"
+            >
+              <img className="nav-icon-img" src={YoutubeIcon} alt="youtube"/>
+            </a>
+
         </div>
+
       </nav>
-    </div>
+
+    </BrowserRouter>
   )
 }
 

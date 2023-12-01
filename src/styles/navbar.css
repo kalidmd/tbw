@@ -3,7 +3,6 @@
     --blue: #0659C7;
     --maximum-width: 95%;
 }
-
 .nav-bar {
     position: relative;
     background-color: var(--blue);
@@ -36,12 +35,48 @@
     width: 65px;
 }
 
-.nav-bar--icons {
+/* --PAGES-- */
+.nav-pages {
     display: flex;
+    width: 60%;
     justify-content: space-between;
-    align-items: center;
-    width: 50px;
 }
-.nav-bar--icon {
-    width: 20px;
+.nav-page-item {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: 500;
 }
+.nav-icon-img {
+    width: 25px;
+}
+.nav-icon-a {
+    font-size: 0px;
+}
+.nav-page-item.active {
+    border-bottom: 2px solid #fff;
+}
+/* --MEDIA QUERY DISABLE NAV PAGES FOR SCREEN LESS THAN 481PX-- */
+@media screen and (max-width: 480px) {
+    .nav-pages {
+        display: none;
+    }
+    .nav-icon-a {
+        display: none;
+    }
+}
+/* --MEDIA QUERY FOR Ipad and Tablet FROM 481PX UPTO 768PX-- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+      background-color: red;
+    }
+    .nav-bar.active {
+       height: 55px;
+    }
+    .tbw-logo {
+        width: 70px;
+    }
+    .nav-pages {
+        width: 50%;
+    }
+
+  }

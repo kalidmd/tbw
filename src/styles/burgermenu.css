@@ -36,8 +36,6 @@
 }
           /* ---HORIZONTAL LINE--- */
 .menu--hr {
-    /* position: relative;
-    bottom: -181px;*/
     width: 80% !important; 
 }
 /* Position and sizing of burger button */
@@ -153,4 +151,10 @@
 }
 .menu--social-icon {
     width: 25px;
+}
+/* --MEDIA QUERY DISABLE BURGER-MENU FOR SCREEN MORE THAN 481PX-- */
+@media screen and (min-width: 481px) {
+    .bm-burger-button {
+        display: none;
+    }
 }

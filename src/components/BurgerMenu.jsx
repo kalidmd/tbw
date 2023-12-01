@@ -165,7 +165,6 @@ function BurgerMenu() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/attend" element={<Attend/>}/>
-            {/* <Route path="/videos" element={<Videos/>}/> */}
             <Route path="/about" element={<About/>}/>
             <Route path="/blog" element={<Blog/>}/>
             <Route path="*" element={<PageNotFound/>}/>

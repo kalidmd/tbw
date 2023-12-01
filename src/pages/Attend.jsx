@@ -18,9 +18,9 @@ function Attend() {
       </div>
 
       <p className="attend-text">
-        You can attend our introduction class in person for free at our convenient classroom every Sunday from 10:30 AM - 12:00 AM that lasts for an hour and a half. For more information, call us at +2519 11 75 30 88 or +2517 03 93 81 11. 
-        <br /> 
-        You can also <a href="#reg-form">register</a> in the form below to join our introductory class straight away.
+        You can attend our introduction class in person for free at our convenient classroom every Sunday from 10:30 AM - 12:00 AM that lasts for an hour and a half. 
+        <br />
+        For more information, call us at +2519 11 75 30 88 or +2517 03 93 81 11. You can also <a href="#reg-form">register</a> in the form below to join our introductory class straight away.
       </p>
 
       <Register />
