@@ -39,7 +39,7 @@ function BurgerMenu() {
   const [backToTop, setBackToTop] = useState(false)
   let backToTopId = "#essential"
   if(activeAboutIcon === true) {
-    backToTopId = "#who-we-are"
+    backToTopId = "#our-aim"
   } else if (activeAttendIcon === true){
     backToTopId = "#attend"
   } else if (activeBlogIcon === true) {

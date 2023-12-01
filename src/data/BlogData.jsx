@@ -1,6 +1,8 @@
-[
+import { nanoid } from "nanoid";
+
+const BlogData = [
     {
-        "id": 1,
+        "id": nanoid(7),
         "blogTitle": "የሰው ዓለም",
         "blogDescription": "",
         "blogContent": 
@@ -8,7 +10,7 @@
         "teacher": "Bereket Teka"
     },
     {
-        "id": 2,
+        "id": nanoid(7),
         "blogTitle": "ሱስ",
         "blogDescription": "",
         "blogContent":
@@ -16,7 +18,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 3,
+        "id": nanoid(7),
         "blogTitle": "ሰውና የፍላጎት ብልሽቱ",
         "blogDescription": "",
         "blogContent": 
@@ -24,7 +26,7 @@
         "teacher": "Bereket Teka"
     },
     {
-        "id": 4,
+        "id": nanoid(7),
         "blogTitle": "ሰውና ፈጣሪው",
         "blogDescription": "",
         "blogContent": 
@@ -32,7 +34,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 5,
+        "id": nanoid(7),
         "blogTitle": "ጥያቄና መልስ",
         "blogDescription": "",
         "blogContent": 
@@ -40,7 +42,7 @@
         "teacher":"Bereket Teka"
     },
     {
-        "id": 6,
+        "id": nanoid(7),
         "blogTitle": "ፍቃድ",
         "blogDescription": "",
         "blogContent": 
@@ -48,7 +50,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 7,
+        "id": nanoid(7),
         "blogTitle": "የስብዕና ረሃብ",
         "blogDescription": "",
         "blogContent": 
@@ -56,7 +58,7 @@
         "teacher": "Bereket Teka"
     },
     {
-        "id": 8,
+        "id": nanoid(7),
         "blogTitle": "የአሁን ህይወት",
         "blogDescription": "",
         "blogContent": 
@@ -64,7 +66,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 9,
+        "id": nanoid(7),
         "blogTitle": "ጊዜ - የሞት ቀጠሮ",
         "blogDescription": "",
         "blogContent": 
@@ -72,7 +74,7 @@
         "teacher": "Bereket Teka"
     },
     {
-        "id": 10,
+        "id": nanoid(7),
         "blogTitle": "ባይተዋርነት",
         "blogDescription": "",
         "blogContent": 
@@ -80,7 +82,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 11,
+        "id": nanoid(7),
         "blogTitle": "ህጋዊነትና መብት",
         "blogDescription": "",
         "blogContent": 
@@ -88,7 +90,7 @@
         "teacher": "Bereket Teka"
     },
     {
-        "id": 12,
+        "id": nanoid(7),
         "blogTitle": "የማይነፃፀር ህይወት",
         "blogDescription": "",
         "blogContent": 
@@ -96,7 +98,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 13,
+        "id": nanoid(7),
         "blogTitle": "የሰው ልጅ ኑሮ",
         "blogDescription": "",
         "blogContent": 
@@ -104,7 +106,7 @@
         "teacher": "Bereket Teka"
     },
     {
-        "id": 14,
+        "id": nanoid(7),
         "blogTitle": "የሰው ዋጋ",
         "blogDescription": "",
         "blogContent": 
@@ -112,7 +114,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 15,
+        "id": nanoid(7),
         "blogTitle": "ጥቅም እና ህይወት",
         "blogDescription": "",
         "blogContent": 
@@ -120,7 +122,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 16,
+        "id": nanoid(7),
         "blogTitle": "ፍቅር",
         "blogDescription": "",
         "blogContent": 
@@ -128,7 +130,7 @@
         "teacher": "Bereket Teka"
     },
     {
-        "id": 17,
+        "id": nanoid(7),
         "blogTitle": "መኖር",
         "blogDescription": "",
         "blogContent": 
@@ -136,7 +138,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 18,
+        "id": nanoid(7),
         "blogTitle": "የሰው ልጅ ውድቀት",
         "blogDescription": "",
         "blogContent": 
@@ -144,7 +146,7 @@
         "teacher": "Bereket Teka"
     },
     {
-        "id": 19,
+        "id": nanoid(7),
         "blogTitle": "ወላዋይነት እና ፅናት",
         "blogDescription": "",
         "blogContent": 
@@ -152,7 +154,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 20,
+        "id": nanoid(7),
         "blogTitle": "የሰው ልጅ አዕምሮ እና እብደቱ",
         "blogDescription": "",
         "blogContent": 
@@ -160,7 +162,7 @@
         "teacher": "Bereket Teka"
     }, 
     {
-        "id": 21,
+        "id": nanoid(7),
         "blogTitle": "ሰውና ነባራዊ ዓለም",
         "blogDescription": "",
         "blogContent":
@@ -168,7 +170,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 22,
+        "id": nanoid(7),
         "blogTitle": "መውደድ",
         "blogDescription": "መውደድ ለኛ የተሳካልን በቅደም ተከተል ነው። መጀመሪያ መውደድን የጀመርነው ከፈጣሪ ነው። ፈጣሪን በትክክለኛ በሃሪው ካወቅነው በኋላ እሱን መውደድ በጣም ቀላል ነበር።...",
         "blogContent":
@@ -178,7 +180,7 @@
         "teacher": "Yonatan Gena"
     },
     {
-        "id": 23,
+        "id": nanoid(7),
         "blogTitle": "የመዳን መንገድ",
         "blogDescription": "ምድር በመዳን መንገዶች ወይም ሰው ይድንበታል፤ ሰው የሚፈልገውን ስኬት፣ የሚፈልገውን ሙላት፣ የሚፈልገውን ነገር በሙሉ ወይም የፍላጎት መልሶቹን ያገኝበታል ወይም ታገኝበታለህ ብለው ተስፋ በሚሰጡ በርካታ መንገዶች የተሞላች ናት፤....",
         "blogContent":
@@ -188,13 +190,14 @@
         "teacher": "Bereket Teka"
     },
     {
-        "id": 24,
+        "id": nanoid(7),
         "blogTitle": "ሞት እና ህይወት",
         "blogDescription": "ሞት የሚባለው ነገር ሰው ጋር ሲሞት አንዴ የሚመጣ ጉዳይ ሳይሆን ፓኬጅ የሆነ ጉዳይና ሰው ሳይሞት ቆሞ ሚሰቃይበት ነገር ነው። ፈጣሪም ደግሞ ይሄንን ጉድለት አይቶ በማንሳት ባንፃሩ ለሰው ህይወትን ሰጥቷል።...",
         "blogContent":
             "ሞት የሚባለው ነገር ሰው ጋር ሲሞት አንዴ የሚመጣ ጉዳይ ሳይሆን ፓኬጅ የሆነ ጉዳይና ሰው ሳይሞት ቆሞ ሚሰቃይበት ነገር ነው። ፈጣሪም ደግሞ ይሄንን ጉድለት አይቶ በማንሳት ባንፃሩ ለሰው ህይወትን ሰጥቷል። ከዚህ በተጨማሪ ደግሞ ፈጣሪ ወደ ሰው ዘንድ ከተመለከተ የሚመለከተው ይሄን ሞት ሚባለውን ጉድለቱን እንጂ ሌሎች ጉድለቶቹን ተመልክቶ መፍትሄ አይሰጥም። የዚህ ምክንያት ደግሞ ሌሎቹ የሰውየው ጉድለቶች የሰው ሳይሆኑ የሌላ ናቸው። ፈጣሪ ደግሞ ለሰው ብቻ ነው መፍትሄ ሊሰጥ የመጣው።",
         "date": "Nov 25, 2023",
         "min": "1 MIN",
-        "teacher": "Yonatan Gena"
+        "teacher": "Yonatan Gena",
     }
 ]
+export default BlogData;

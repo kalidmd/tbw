@@ -5,4 +5,23 @@
 } 
 .about-container {
     /* background-color: red; */
+    width: var(--maximum-width);
+    margin: 0 auto;
+}
+.our-aim {
+    margin-top: 25px;
+    background-color: #fff;
+    padding: 18px;
+    border-radius: var(--border-rad);
+    box-shadow: 0 1px 5px var(--grey-color);
+}
+.our-aim-title {
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.our-aim-description {
+    font-size: 19px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
 }
