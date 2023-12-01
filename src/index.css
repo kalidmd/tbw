@@ -151,7 +151,7 @@ img {
 }
                /* 4TH SECTION LATEST VIDEOS*/
 .latest-video-container {
-  width: 95%;
+  width: var(--maximum-width);
   text-align: center;
   margin: 30px auto 0;
 }
@@ -160,13 +160,11 @@ img {
   font-weight: 500;
   margin-bottom: 15px;
 }
-.latest-video-container iframe {
-  width: 360px;
-  height: 202px;
-  border-radius: var(--border-rad);
-}
 .youtube-iframe {
   border: 0;
+  border-radius: var(--border-rad);
+  width: 90%;
+  height: 197px;
 }
         /* --5th SECTION HOME MAP IFRAM-- */
 .home-map {
@@ -190,7 +188,7 @@ img {
 /* --MEDIA QUERY FOR SMALL SCREEN MOBILE UPTO 360PX-- */
 @media screen and (max-width: 350px) {
   body {
-    background-color: red;
+    /* background-color: red; */
   }
   .essential-header {
     font-size: 18px;
@@ -214,16 +212,15 @@ img {
     width: 145px;
   }
                /* 4TH SECTION LATEST VIDEOS*/
-  .latest-video-container iframe {
-    width: 290px;
-    height: 181px;
+  .youtube-iframe {
+    height: 182px;
   }
 }
 
-/* --MEDIA QUERY FOR MEDIUM SCREEN MOBILE UPTO 360PX-- */
+/* --MEDIA QUERY FOR MEDIUM SCREEN MOBILE UPTO 380PX-- */
 @media screen and (min-width: 351px) and (max-width: 380px) {
   body {
-    background-color: green;
+    /* background-color: green; */
   }
   .essential-header {
     font-size: 18px;
@@ -247,14 +244,13 @@ img {
     width: 160px;
   }
           /* 4TH SECTION LATEST VIDEOS @MEDIA*/
-  .latest-video-container iframe {
-    width: 335px;
-    height: 185px;
+  .youtube-iframe {
+    height: 182px;
   }
 }
 
-/* --MEDIA QUERY FOR Ipad and Tablet FROM 481PX UPTO 768PX-- */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+/* --MEDIA QUERY FOR Ipad and Tablet FROM 481PX TO 768PX-- */
+@media screen and (min-width: 481px) {
   body {
     /* background-color: yellow; */
   }
@@ -262,27 +258,114 @@ img {
     padding: 25px 0 30px 11px;
   }
   .essential-header {
-      font-size: 25px;
+      font-size: 23px;
   }
   .essential-paragraph {
       padding: 10px 0 21px;
       font-size: 20px;
   }
   .register-btn {
-    font-size: 18px;
+    font-size: 17px;
     padding: 8px 11px;
 }
           /* 2ND SECTION LECTURES SECTION @MEDIA*/
   .lectures-header {
       width: 55%;
-      font-size: 30px;
+      font-size: 26px;
   }
   .lectures-profile {
-      width: 90%;
+      width: 80%;
       margin: 0 auto;
   }
   .lecture-image {
-      width: 270px;
+      width: 240px;
   }
+  .lecture-name {
+    font-size: 18px;
+  }
+        /* 3RD SECTION BLOG SECTION @MEDIA*/
+  .home--blog-header {
+    font-size: 23px;
+  }
+  .home--blog-title {
+    font-size: 27px;
+  }
+  .home--blog-description {
+    font-size: 17px;
+  }
+  .home--blog-truth-by-will-hash {
+    font-size: 18px;
+  }
+        /* 4TH SECTION LATEST VIDEOS @MEDIA*/
+  .latest-video-header {
+    font-size: 23px;
+  }
+  .youtube-iframe {
+    height: 362px;
+  }
+  .reg-form {
+    width: 60% !important;
+  }
+}
+/* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 769PX-- */
+@media screen and (min-width: 769px) {
+  body {
+    /* background-color: rgb(211, 179, 234); */
+  }
+  /* .essential-container {
+    height: 230px;
+  } */
+  .essential-content {
+    padding: 30px 0 35px 23px;
+  }
+  .essential-header {
+    font-size: 26px;
 
+  }
+  .essential-paragraph {
+    font-size: 22px;
+  }
+  .register-btn {
+    font-size: 19px;
+    margin-top: 20px;
+  }
+  /* 2ND SECTION LECTURES SECTION @MEDIA*/
+  .lectures-header {
+    width: 45%;
+  }
+  .lectures-profile {
+    width: 80%;
+  }
+  .lecture-image {
+    width: 300px;
+  }
+  .lecture-name {
+    font-size: 20px;
+  }
+   /* 3RD SECTION BLOG SECTION @MEDIA*/
+   .home--blog-header {
+    font-size: 25px;
+  }
+  .home--blog-title {
+    font-size: 28px;
+  }
+  .home--blog-description {
+    font-size: 19px;
+  }
+   /* 4TH SECTION LATEST VIDEOS @MEDIA*/
+  .latest-video-header {
+    font-size: 25px;
+  }
+  .youtube-iframe {
+    height: 460px;
+  }
+  .reg-form {
+    width: 50% !important;
+  }
+  .home-map {
+    margin-top: 30px;
+  }
+  .home-map-iframe {
+    height: 400px;
+  }
 }

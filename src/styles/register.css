@@ -68,3 +68,24 @@
     border-radius: var(--border-rad);
     padding: 3px 0;
 }
+/* --MEDIA QUERY FOR Ipad and Tablet FROM 481PX TO 768PX-- */
+@media screen and (min-width: 481px) {
+    .reg-form {
+      width: 60% !important;
+    }
+    .form-title {
+        font-size: 23px;
+    }
+  }
+  /* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 769PX-- */
+  @media screen and (min-width: 769px) {
+    .reg-form {
+      width: 50% !important;
+    }
+    .form-title {
+        font-size: 25px;
+    }
+    .reg-form label {
+        font-size: 18px;
+    }
+  }

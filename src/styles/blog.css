@@ -25,15 +25,19 @@
     padding-bottom: 8px;
     font-size: 15px;
 }
-.blog-description {
-    /* color: #fff;
-    background-color: var(--blue); */
-    /* padding: 15px;
-    border-radius: var(--border-rad); */
-}
 .blog-truth-by-will-hash {
     font-size: 17px;
     font-weight: 700;
     color: blue;
     padding-top: 3px;
+}
+
+/* --MEDIA QUERY FOR Ipad and Tablet FROM 481PX UPTO 768PX-- */
+@media screen and (min-width: 481px) {
+    .blog-description {
+        font-size: 19px;
+    }
+    .blog-truth-by-will-hash {
+        font-size: 18px;
+    }
 }
