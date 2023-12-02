@@ -167,14 +167,15 @@ img {
   height: 197px;
 }
         /* --5th SECTION HOME MAP IFRAM-- */
-.home-map {
-  margin-top: 25px;
+.map-and-reg-form {
+  display: flex;
+  flex-direction: column;
 }
 .home-map-iframe {
   width: 100%; 
-  height: 340px
+  height: 340px;
+  margin-top: 30px;
 }
-
 /* Common Break Points in media query {
       320px — 480px: Mobile devices
       481px — 768px: iPads, Tablets
@@ -185,10 +186,10 @@ img {
       My Phone 412 * 780
 } */
 
-/* --MEDIA QUERY FOR SMALL SCREEN MOBILE UPTO 360PX-- */
+/* --MEDIA QUERY FOR SMALL SCREEN MOBILE UPTO 350PX-- */
 @media screen and (max-width: 350px) {
   body {
-    /* background-color: red; */
+    background-color: red;
   }
   .essential-header {
     font-size: 18px;
@@ -217,10 +218,10 @@ img {
   }
 }
 
-/* --MEDIA QUERY FOR MEDIUM SCREEN MOBILE UPTO 380PX-- */
+/* --MEDIA QUERY FOR MEDIUM SCREEN MOBILE FROM 380PX UPTO 380PX-- */
 @media screen and (min-width: 351px) and (max-width: 380px) {
   body {
-    /* background-color: green; */
+    background-color: green;
   }
   .essential-header {
     font-size: 18px;
@@ -248,11 +249,13 @@ img {
     height: 182px;
   }
 }
-
 /* --MEDIA QUERY FOR Ipad and Tablet FROM 481PX TO 768PX-- */
 @media screen and (min-width: 481px) {
   body {
-    /* background-color: yellow; */
+    background-color: yellow;
+  }
+  .essential-container {
+    width: 90%;
   }
   .essential-content {
     padding: 25px 0 30px 11px;
@@ -284,6 +287,9 @@ img {
     font-size: 18px;
   }
         /* 3RD SECTION BLOG SECTION @MEDIA*/
+  .home--blog-container {
+    width: 90%;
+  }
   .home--blog-header {
     font-size: 23px;
   }
@@ -301,20 +307,18 @@ img {
     font-size: 23px;
   }
   .youtube-iframe {
-    height: 362px;
-  }
-  .reg-form {
-    width: 60% !important;
+    width: 80%;
+    height: 322px;
   }
 }
-/* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 769PX-- */
+/* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 769PX UPTO 1024-- */
 @media screen and (min-width: 769px) {
   body {
-    /* background-color: rgb(211, 179, 234); */
+    background-color: rgb(211, 179, 234);
   }
-  /* .essential-container {
-    height: 230px;
-  } */
+  .essential-container {
+    width: 80%;
+  }
   .essential-content {
     padding: 30px 0 35px 23px;
   }
@@ -331,18 +335,22 @@ img {
   }
   /* 2ND SECTION LECTURES SECTION @MEDIA*/
   .lectures-header {
-    width: 45%;
+    width: 55%;
+    font-size: 30px;
   }
   .lectures-profile {
-    width: 80%;
+    width: 73%;
   }
   .lecture-image {
-    width: 300px;
+    width: 240px;
   }
   .lecture-name {
-    font-size: 20px;
+    font-size: 23px;
   }
    /* 3RD SECTION BLOG SECTION @MEDIA*/
+   .home--blog-container {
+    width: 80%;
+   }
    .home--blog-header {
     font-size: 25px;
   }
@@ -357,15 +365,50 @@ img {
     font-size: 25px;
   }
   .youtube-iframe {
-    height: 460px;
-  }
-  .reg-form {
-    width: 50% !important;
+    width: 70%;
+    height: 293px;
   }
   .home-map {
     margin-top: 30px;
   }
   .home-map-iframe {
-    height: 400px;
+    height: 365px;
   }
+}
+/* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 1025PX UPTO 1200PX -- */
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: #F2F2F2;
+  }
+  .essential-container {
+    width: 70%;
+  }
+  .lectures-header {
+    width: 43%;
+  }
+  .lectures-profile {
+    width: 60%;
+  }
+  .home--blog-container {
+    width: 70%;
+  }
+  .youtube-iframe {
+    width: 60%;
+    height: 402px;
+  }
+  .map-and-reg-form {
+    width: 60%;
+    /* background-color: red; */
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto; 
+  }
+  .home-map-iframe {
+    width: 50%; 
+    height: 360px;
+    margin-top: 0px;
+    border-radius: var(--border-rad);
+    box-shadow: 0 3px 10px var(--grey-color);
+  }
+
 }

@@ -10,8 +10,12 @@
     width: var(--maximum-width);
     margin: 0 auto;
 }
+.classroom-container {
+    display: flex;
+    flex-direction: column;
+}
 .classroom {
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 .classroom-label {
     color: var(--blue);
@@ -23,7 +27,7 @@
     border-radius: var(--border-rad);
 }
 .attend-text {
-    margin: 12px auto 0;
+    /* margin: 12px auto 40px; */
     font-size: 18px;
     font-weight: 500;
     color: #000;
@@ -37,9 +41,9 @@
     padding: 0 3px;
     font-weight: 600;
 }
-.tgl {
+/* .tgl {
     margin-top: 25px;
-}
+} */
 .tgl-img {
     border-radius: var(--border-rad);
 }
@@ -64,7 +68,7 @@
         font-size: 19px;
     }
 }
-/* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 769PX-- */
+/* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 769PX UPTO 1024-- */
 @media screen and (min-width: 769px) {
     .classroom-label {
         font-size: 18px;
@@ -78,4 +82,38 @@
     .attend-map-iframe {
         height: 400px;
     }
+}
+/* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 1025PX UPTO 1200PX -- */
+@media screen and (min-width: 1024px) {
+    .classroom-container {
+        width: 85%;
+        /* background-color: red; */
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 25px auto;
+    }
+    .classroom-img {
+        width: 520px;
+    }
+    .attend-text {
+        width: 400px;
+        /* background-color: #fff;
+        border-radius: var(--border-rad); */
+        /* padding: 25px 15px 15px; */
+        font-size: 22px;
+        /* box-shadow: 0 3px 10px var(--grey-color) */
+    }
+    /* .tgl-and-reg-form {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto;
+    } */
+    .tgl-img {
+        width: 252px;
+    }
+    .map-container {
+        width: 85%;
+    }
+
 }

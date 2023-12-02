@@ -11,24 +11,25 @@ function Attend() {
       {/* <p className="attend-content">
         ዘውትር እሁድ ከ 4:30 - 6፡00 ሰዓት የአንድ ሰዓት ተኩል ክፍለ ጊዜ የሚወስድ  የመግቢያ ትምህርት ስላለን ምቹ በሆነው የትምህርት ስፍራችን በአካል በመገኘት በነጻ መታደም ይችላሉ። ለበለጠ መረጃ በ +2519 11 75 30 88 ወይም በ +2517 03 93 81 11 ይደውሉልን፤ አልያም ከዚህ በታች ባለው ፎርም በመመዝገብ ቀጥታ የመግቢያ ትምህርታችንን ይካፈሉ።
       </p> */}
-      
-      <div className="classroom">
-        <img className="classroom-img" src={ClassRoom} alt="classroom" />
-        <p className="classroom-label">Truth By Will Classroom</p>
+      <div className="classroom-container">
+        <div className="classroom">
+          <img className="classroom-img" src={ClassRoom} alt="classroom" />
+          <p className="classroom-label">Truth By Will Classroom</p>
+        </div>
+
+        <p className="attend-text">
+          You can attend our introduction class in person for free at our convenient classroom every Sunday from 10:30 AM - 12:00 AM that lasts for an hour and a half. 
+          <br />
+          <br />
+          For more information, call us at +2519 11 75 30 88 or +2517 03 93 81 11. You can also <a href="#reg-form">register</a> in the form below to join our introductory class straight away.
+        </p>
       </div>
 
-      <p className="attend-text">
-        You can attend our introduction class in person for free at our convenient classroom every Sunday from 10:30 AM - 12:00 AM that lasts for an hour and a half. 
-        <br />
-        For more information, call us at +2519 11 75 30 88 or +2517 03 93 81 11. You can also <a href="#reg-form">register</a> in the form below to join our introductory class straight away.
-      </p>
 
-      <Register />
-
-      <div className="tgl">
-        <p className="tgl-label">We are at TGL BLDG, 4th FLOOR</p>
-        <img  className="tgl-img" src={TglBuilding} alt="TGL Building" />
+      <div className="tgl-and-reg-form">
+        <Register />
       </div>
+        
 
       <div className="map-container">
         <p className="map-label"> Find Us On Google Map </p>
@@ -42,6 +43,11 @@ function Attend() {
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
+
+      <div className="tgl">
+          <img  className="tgl-img" src={TglBuilding} alt="TGL Building" />
+          <p className="tgl-label">We are at TGL BLDG, 4th FLOOR</p>
+        </div>
     </div>
   )
 }
