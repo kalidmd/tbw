@@ -46,7 +46,7 @@ function Attend() {
 
       <div className="tgl">
           <img  className="tgl-img" src={TglBuilding} alt="TGL Building" />
-          <p className="tgl-label">We are at TGL BLDG, 4th FLOOR</p>
+          <p className="tgl-label">We are at TGL BLDG, 4th FLOOR.</p>
         </div>
     </div>
   )
