@@ -15,7 +15,7 @@
     flex-direction: column;
 }
 .classroom {
-    /* margin-top: 25px; */
+    margin-top: 25px;
 }
 .classroom-label {
     color: var(--blue);
@@ -27,7 +27,7 @@
     border-radius: var(--border-rad);
 }
 .attend-text {
-    /* margin: 12px auto 40px; */
+    margin: 12px auto 0;
     font-size: 18px;
     font-weight: 500;
     color: #000;
@@ -41,26 +41,25 @@
     padding: 0 3px;
     font-weight: 600;
 }
-/* .tgl {
+.attend-map-container {
     margin-top: 25px;
-} */
-.tgl-img {
-    border-radius: var(--border-rad);
 }
-.map-container {
-    margin: 25px auto;
-}
-.map-label, .tgl-label {
+.attend-map-label, .tgl-buil-label {
     color: var(--blue);
     font-size: 17px;
     font-weight: 600;
-    padding-bottom: 5px;
+    text-align: center;
+    padding-bottom: 17px;
 }
 .attend-map-iframe {
     border-radius: var(--border-rad);
     box-shadow: 0 2px 7px var(--grey-color);
     width: 100%; 
     height: 340px
+}
+.tgl-buil {
+    width: 300px;
+    margin: 25px auto;
 }
 /* --MEDIA QUERY FOR Ipad and Tablet FROM 481PX UPTO 768PX-- */
 @media screen and (min-width: 481px) {
@@ -76,7 +75,7 @@
     .attend-text {
         font-size: 20px;
     }
-    .map-label, .tgl-label {
+    .attend-map-label, .tgl-label {
         font-size: 18px;
     }
     .attend-map-iframe {
@@ -87,33 +86,38 @@
 @media screen and (min-width: 1024px) {
     .classroom-container {
         width: 85%;
-        /* background-color: red; */
         flex-direction: row;
         justify-content: space-between;
         margin: 25px auto;
+    }
+    .classroom {
+        margin-top: 0;
     }
     .classroom-img {
         width: 520px;
     }
     .attend-text {
         width: 400px;
-        /* background-color: #fff;
-        border-radius: var(--border-rad); */
-        /* padding: 25px 15px 15px; */
         font-size: 22px;
-        /* box-shadow: 0 3px 10px var(--grey-color) */
+        margin: 0;
     }
-    /* .tgl-and-reg-form {
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-        margin: 50px auto;
-    } */
-    .tgl-img {
-        width: 252px;
+    .attend-map-container {
+        width: 50%;
+        margin-top: 0;
     }
-    .map-container {
-        width: 85%;
+    .attend-map-label, .tgl-buil-label {
+        font-size: 20px;
+        font-weight: 700;
     }
-
+    .attend-map-iframe {
+        width: 100%;
+        height: 317px;
+    }
+    .tgl-buil {
+        width: 400px;
+        margin: 25px auto 50px;
+    }
+    .tgl-buil-img {
+        border-radius: var(--border-rad);
+    }
 }

@@ -118,6 +118,7 @@ img {
   padding: 5px 0 3px;
   font-size: 25px;
   font-weight: 600;
+  color: var(--blue)
 }
 .home--blog-description {
   font-size: 15px;
@@ -336,8 +337,8 @@ img {
   }
   /* 2ND SECTION LECTURES SECTION @MEDIA*/
   .lectures-header {
-    width: 55%;
-    font-size: 30px;
+    width: 52%;
+    font-size: 28px;
   }
   .lectures-profile {
     width: 73%;
@@ -385,7 +386,7 @@ img {
     width: 70%;
   }
   .lectures-header {
-    width: 43%;
+    width: 40%;
   }
   .lectures-profile {
     width: 60%;

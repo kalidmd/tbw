@@ -3,13 +3,15 @@
     background-color: #000;
     color: #F2F2F2;
     font-size: 13px;
-    /* margin-top: 30px; */
 }
 .footer--tbw-logo {
     width: 90px;
 }
 .footer-content {
     /* background-color: red; */
+}
+.right-side-footer { 
+    /* background-color: blueviolet; */
     width: 320px;
     margin: 0 auto;
     padding: 25px 0 25px;
@@ -31,12 +33,11 @@
 .social--icon {
     width: 22px;
 }
-                /* ADDRESS */
-.address {
-    /* background-color: red; */
+                /* ADDRESS OR LEFT SIDE CONTAINER */
+.left-side-footer {
+    /* background-color: green; */
     width: 85%;
     margin: 0 auto;
-    margin-bottom: 20px;
 }
 .location, .email, .phone {
     position: relative;
@@ -63,16 +64,13 @@
     top: 8px;
 }
 .copyright {
-    padding-bottom: 10px;
+    padding: 10px 0;
     color: #fff;
     text-align: center;
     font-size: 12px;
 }
 /* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 769PX UPTO 1024-- */
 @media screen and (min-width: 769px) {
-    .footer-content {
-        width: 340px;
-    }
     .footer--tbw-logo {
         width: 100px;
     }
@@ -89,10 +87,38 @@
         width: 21px;
     }
     .address-text {
-        font-size: 15px;
-        margin-left: 29px;
+        font-size: 16px;
+        margin-left: 30px;
     }
     .copyright {
         font-size: 14px;
+        padding: 40px 0 20px;
+    }
+}
+/* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 1025PX UPTO 1200PX -- */
+@media screen and (min-width: 1024px) {
+    .footer-content {
+        display: flex;
+        flex-flow: row-reverse;
+        /* background-color: red; */
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+    .right-side-footer {
+        width: 475px;
+    }
+    .guiding-people {
+        font-size: 18px;
+        width: 233px;
+    }
+    .social-medias {
+        width: 159px;
+    }
+    .social--icon {
+        width: 26px;
+    }
+    .copyright {
+        font-size: 16px;
     }
 }

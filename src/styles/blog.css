@@ -7,7 +7,7 @@
   }
 .blog-container {
     width: var(--maximum-width);
-    margin: 25px auto 0;
+    margin: 25px auto 50px;
 }
 .blog-content {
     margin-bottom: 25px;
@@ -17,8 +17,8 @@
     padding: 15px;
 }
 .blog-title {
-    /* padding-bottom: 0px; */
     text-align: center;
+    color: var(--blue);
 }
 .blog-date-and-minute {
     text-align: center;
