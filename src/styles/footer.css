@@ -42,7 +42,7 @@
     position: relative;
     padding-top: 10px;
 }
-.location-icon, .email-icon, .phone-icon {
+.address-icon {
     width: 18px;
     position: absolute;
 }
@@ -56,7 +56,7 @@
 .location-icon {
     top: 11px;
 }
-    .email-icon {
+.email-icon {
     top: 10px;
 }
 .phone-icon {
@@ -67,4 +67,32 @@
     color: #fff;
     text-align: center;
     font-size: 12px;
+}
+/* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 769PX UPTO 1024-- */
+@media screen and (min-width: 769px) {
+    .footer-content {
+        width: 340px;
+    }
+    .footer--tbw-logo {
+        width: 100px;
+    }
+    .guiding-people {
+        font-size: 16px;
+    }
+    .social-medias {
+        width: 135px;
+    }
+    .social--icon {
+        width: 24px;
+    }
+    .address-icon {
+        width: 21px;
+    }
+    .address-text {
+        font-size: 15px;
+        margin-left: 29px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
 }

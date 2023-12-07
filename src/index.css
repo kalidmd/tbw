@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-/*   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  /* -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent; */
 }
 ::after, ::before {
@@ -170,6 +170,7 @@ img {
 .map-and-reg-form {
   display: flex;
   flex-direction: column;
+  flex-flow: column-reverse;
 }
 .home-map-iframe {
   width: 100%; 
@@ -323,7 +324,7 @@ img {
     padding: 30px 0 35px 23px;
   }
   .essential-header {
-    font-size: 26px;
+    font-size: 24px;
 
   }
   .essential-paragraph {
@@ -410,5 +411,4 @@ img {
     border-radius: var(--border-rad);
     box-shadow: 0 3px 10px var(--grey-color);
   }
-
 }

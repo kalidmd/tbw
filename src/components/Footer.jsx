@@ -58,29 +58,29 @@ function Footer() {
       <div className="address">
         <div className="email">
           <img
-            className='email-icon' 
+            className="email-icon address-icon" 
             src={EmailIcon} 
             alt="email icon" 
           /> 
-          <p className="email-text">info@truthbywill.org</p>
+          <p className="email-text address-text">info@truthbywill.org</p>
         </div>
 
         <div className="phone">
           <img
-            className='phone-icon' 
+            className="phone-icon address-icon" 
             src={PhoneIcon} 
             alt="phone icon" 
           /> 
-          <p className="phone-text">+2519 11 75 30 88 | +2517 03 93 81 11</p>
+          <p className="phone-text address-text">+2519 11 75 30 88 | +2517 03 93 81 11</p>
         </div>
 
         <div className="location">
           <img
-            className='location-icon' 
+            className="location-icon address-icon" 
             src={LocationIcon} 
             alt="Location icon" 
           /> 
-          <p className="location-text">
+          <p className="location-text address-text">
             Addis Ababa, Ethiopia
             <br /> 
             Hayat Hospital to bole brass road, TGL building, 4th floor. 
