@@ -61,6 +61,9 @@
     width: 300px;
     margin: 25px auto;
 }
+.tgl-buil-img {
+    border-radius: var(--border-rad);
+}
 /* --MEDIA QUERY FOR Ipad and Tablet FROM 481PX UPTO 768PX-- */
 @media screen and (min-width: 481px) {
     .attend-text {
@@ -69,17 +72,35 @@
 }
 /* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 769PX UPTO 1024-- */
 @media screen and (min-width: 769px) {
+    /* .classroom {
+        margin: 25px auto;
+    } */
+    .classroom-container {
+        /* background-color: red; */
+        width: 75%;
+        margin: 0 auto;
+    }
+    .classroom-img {
+        width: 100%;
+    }
     .classroom-label {
         font-size: 18px;
     }
     .attend-text {
         font-size: 20px;
     }
+    .attend-map-container {
+        width: 75%;
+        margin: 25px auto;
+    }
     .attend-map-label, .tgl-label {
         font-size: 18px;
     }
     .attend-map-iframe {
         height: 400px;
+    }
+    .tgl-buil {
+        width: 400px;
     }
 }
 /* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 1025PX UPTO 1200PX -- */
@@ -114,10 +135,7 @@
         height: 317px;
     }
     .tgl-buil {
-        width: 400px;
         margin: 25px auto 50px;
     }
-    .tgl-buil-img {
-        border-radius: var(--border-rad);
-    }
+
 }
