@@ -2,8 +2,12 @@ import React from 'react'
 import BlogData from '../data/BlogData';
 import '../styles/blog.css'
 
-function Blog() {
-
+function Blog() {   
+  // console.log(BlogData[BlogData.length - 1].blogContent);
+  // const updatedBlog = BlogData[BlogData.length - 1].blogContent.replace(/n/, "<br />");
+  // console.log(updatedBlog);
+  // const breakPattern = /n/;
+  // const replacement = "<br />";
   const blogEl = BlogData.map(blog => {
     return (
       <div key={blog.id} className="blog-content">

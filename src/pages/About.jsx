@@ -14,6 +14,7 @@ function About() {
         </p>
       </div>
 
+
       <div className="about-content">
         <p className="about-title"> Our Aim </p>
         <p className="about-description">
