@@ -31,7 +31,7 @@
     font-size: 18px;
     font-weight: 500;
     color: #000;
-    letter-spacing: 0.2px;
+    /* letter-spacing: 0.2px; */
 }
 .attend-text a {
     background-color: var(--blue);

@@ -11,7 +11,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
 body {
   font-family: 'Maven Pro', sans-serif;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
+  /* background-color: #000; */
 }
 html {
   scroll-behavior: smooth;
@@ -191,7 +192,7 @@ img {
 /* --MEDIA QUERY FOR SMALL SCREEN MOBILE UPTO 350PX-- */
 @media screen and (max-width: 350px) {
   body {
-    background-color: red;
+    /* background-color: red; */
   }
   .essential-header {
     font-size: 18px;
@@ -223,7 +224,7 @@ img {
 /* --MEDIA QUERY FOR MEDIUM SCREEN MOBILE FROM 351PX UPTO 380PX-- */
 @media screen and (min-width: 351px) and (max-width: 380px) {
   body {
-    background-color: green;
+    /* background-color: green; */
   }
   .essential-header {
     font-size: 18px;
@@ -254,7 +255,7 @@ img {
 /* --MEDIA QUERY FOR Ipad and Tablet FROM 481PX TO 768PX-- */
 @media screen and (min-width: 481px) {
   body {
-    background-color: yellow;
+    /* background-color: yellow; */
   }
   .essential-container {
     width: 90%;
@@ -316,7 +317,7 @@ img {
 /* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 769PX UPTO 1024-- */
 @media screen and (min-width: 769px) {
   body {
-    background-color: rgb(211, 179, 234);
+    /* background-color: rgb(211, 179, 234); */
   }
   .essential-container {
     width: 75%;
@@ -380,7 +381,7 @@ img {
 /* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 1025PX UPTO 1200PX -- */
 @media screen and (min-width: 1024px) {
   body {
-    background-color: #F2F2F2;
+    /* background-color: #F2F2F2; */
   }
   .essential-container {
     width: 70%;
