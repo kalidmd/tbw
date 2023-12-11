@@ -7,11 +7,7 @@
 .footer--tbw-logo {
     width: 90px;
 }
-.footer-content {
-    /* background-color: red; */
-}
 .right-side-footer { 
-    /* background-color: blueviolet; */
     width: 320px;
     margin: 0 auto;
     padding: 25px 0 25px;
@@ -100,7 +96,6 @@
     .footer-content {
         display: flex;
         flex-flow: row-reverse;
-        /* background-color: red; */
         width: 80%;
         margin: 0 auto;
         padding-top: 25px;
@@ -120,5 +115,11 @@
     }
     .copyright {
         font-size: 16px;
+    }
+}
+/* --MEDIA QUERY FOR EXTRA LARGE SCREEN, TV FROM 1281PX AND ABOVE  -- */
+@media screen and (min-width: 1281px) {
+    .right-side-footer {
+        width: 400px;
     }
 }

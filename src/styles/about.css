@@ -46,3 +46,9 @@
         width: 75%;
     }
 }
+/* --MEDIA QUERY FOR EXTRA LARGE SCREEN, TV FROM 1281PX AND ABOVE  -- */
+@media screen and (min-width: 1281px) {
+    .about-container {
+        width: 60%;
+    }
+}
