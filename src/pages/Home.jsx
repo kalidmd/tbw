@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react'
+import React from 'react'
 import Register from '../components/Register';
 import Bereket from '../assets/image/Bereket-close.png'
 import Yonatan from '../assets/image/Yonatan-close.png'
@@ -6,41 +6,44 @@ import BlogData from '../data/BlogData'
 
 
 function Home() {
-  const [welcomeText, setWelcomeText] = useState("");
+  // const [welcomeText, setWelcomeText] = useState("");
 
-  const welcomeTextLoad = () => { 
-      setWelcomeText("Welcome To Truth By Will.");
-      setTimeout(()=> {
-          setWelcomeText("እንኳን ወደ እውነትን በፍቃድ በደህና መጡ.");
-      }, 6000)
-  };
+  // const welcomeTextLoad = () => { 
+  //     setWelcomeText("Truth By Will.");
+  //     // setTimeout(()=> {
+  //     //     setWelcomeText("እንኳን ወደ እውነትን በፍቃድ በደህና መጡ.");
+  //     // }, 6000)
+  // };
 
-  useEffect(() => {
-    welcomeTextLoad();
-    const intervalId = setInterval(welcomeTextLoad, 12010);
+  // useEffect(() => {
+  //   welcomeTextLoad();
+  //   const intervalId = setInterval(welcomeTextLoad, 12010);
 
-    return () => clearInterval(intervalId);
-  }, [])
+  //   return () => clearInterval(intervalId);
+  // }, [])
  
   
   return (
     <main>
+      
+
       {/* 2ND SECTION ESSENTIAL THINGS*/}
       <section id="essential" className="essential-container">
+
         <div className="essential-content">
+          <div className="welcome-text-cont">
+             <span className="welcome-text-span">Welcome To</span> <span className="welcome-text">Truth By Will. </span>
+          </div>
+
           <p className='essential-header'>Essential things in life are given for free.</p>
           <p className='essential-paragraph'>Get the ultimate success in life through our weekly classes for free.</p>
-          
-          <div className="welcome-text-cont">
-            <div className="welcome-text"> {welcomeText} </div>
-          </div>
           
           <a href="#reg-form">
             <button className="register-btn"> Register Now </button>
           </a>
         </div>
       </section>
-
+      
       {/* 3RD SECTION LECTURES SECTION*/}
       <section className="lectures-container">
         <p className="lectures-header">

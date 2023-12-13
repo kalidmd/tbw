@@ -45,29 +45,32 @@ img {
   box-shadow: 0 3px 10px var(--grey-color);
 }
 .essential-content {
-  width: 60%;
-  padding: 18px 0 28px 11px;
+  /* width: 60%; */
+  padding: 18px 0 20px 11px;
 }
 .essential-header {
   font-size: 20px;
   font-weight: 500;
 }
 .essential-paragraph {
-  padding: 4px 0 8px;
+  padding: 4px 0 15px;
   font-size: 16px;
   color: #626262;
 }
     /* --WELCOME TEXT-- */
 .welcome-text-cont {
   width: fit-content;
-  /* background-color: green; */
-  /* margin: 30% auto; */
-  /* overflow: hidden; */
+  padding-bottom: 10px;
+}
+.welcome-text-span {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 500;
 }
 .welcome-text {
   position: relative;
   color: var(--blue);
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 500;
 }
 .welcome-text::before {
@@ -80,7 +83,7 @@ img {
   background-color: #F2F2F2;
   /* background-color: red; */
   border-left: 2px solid var(--blue);
-  animation: animate steps(26) 6s infinite;
+  animation: animate steps(14) 4.5s infinite;
 }
 @keyframes animate {
   40%, 60% {
@@ -226,6 +229,13 @@ img {
   /* body {
     background-color: red;
   } */
+  .essential-content {
+    /* width: 65%; */
+    padding: 8px 0 11px 11px;
+  }
+  .welcome-text-span, .welcome-text {
+    font-size: 14px;
+  }
   .essential-header {
     font-size: 18px;
   }
@@ -235,10 +245,6 @@ img {
   .register-btn {
     font-size: 13px;
     padding: 6px 7px;
-  }
-  .essential-content {
-    width: 65%;
-    padding: 8px 0 11px 11px;
   }
               /* 2ND SECTION LECTURES SECTION @MEDIA*/
   .lectures-header {
@@ -257,6 +263,13 @@ img {
   /* body {
     background-color: green;
   } */
+  .essential-content {
+    /* width: 65%; */
+    padding: 8px 0 11px 11px;
+  }
+  .welcome-text-span, .welcome-text {
+    font-size: 16.5px;
+  }
   .essential-header {
     font-size: 18px;
   }
@@ -266,10 +279,6 @@ img {
   .register-btn {
     font-size: 13px;
     padding: 6px 7px;
-  }
-  .essential-content {
-    width: 65%;
-    padding: 8px 0 11px 11px;
   }
           /* 2ND SECTION LECTURES SECTION @MEDIA*/
   .lectures-header {
@@ -293,6 +302,9 @@ img {
   }
   .essential-content {
     padding: 25px 0 30px 11px;
+  }
+  .welcome-text-span, .welcome-text {
+    font-size: 22px;
   }
   .essential-header {
       font-size: 23px;
@@ -355,6 +367,9 @@ img {
   }
   .essential-content {
     padding: 30px 0 35px 23px;
+  }
+  .welcome-text-span, .welcome-text {
+    font-size: 23px;
   }
   .essential-header {
     font-size: 24px;
@@ -445,9 +460,9 @@ img {
 }
 /* --MEDIA QUERY FOR EXTRA LARGE SCREEN, TV FROM 1281PX AND ABOVE  -- */
 @media screen and (min-width: 1281px) {
-  /* body {
+  body {
     background-color: rgb(178, 44, 67);
-  } */
+  }
   .essential-container {
     width: 60%;
   }
