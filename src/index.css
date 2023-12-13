@@ -352,9 +352,9 @@ img {
 }
 /* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 769PX UPTO 1024-- */
 @media screen and (min-width: 769px) {
-  body {
+  /* body {
     background-color: rgb(211, 179, 234);
-  }
+  } */
   .essential-container {
     width: 75%;
   }
