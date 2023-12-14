@@ -16,6 +16,7 @@ body {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 140px;
+  /* scroll-padding-top: 40px; */
 }
 img {
   max-width: 100%;
@@ -76,9 +77,10 @@ img {
   width: 100%;
   background-color: #F2F2F2;
   border-left: 2px solid var(--blue);
-  animation: animate steps(14) 4.5s infinite;
+  animation: animate-welcome-text steps(14) 4.5s infinite;
+  /* animation: animate-welcome-text 4.5s ease infinite; */
 }
-@keyframes animate {
+@keyframes animate-welcome-text {
   40%, 60% {
       left: 100%;
   }
