@@ -43,7 +43,7 @@
 /* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 1025PX UPTO 1200PX -- */
 @media screen and (min-width: 1024px) {
     .about-container {
-        width: 75%;
+        width: 70%;
     }
 }
 /* --MEDIA QUERY FOR EXTRA LARGE SCREEN, TV FROM 1281PX AND ABOVE  -- */
