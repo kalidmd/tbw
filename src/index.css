@@ -16,7 +16,6 @@ body {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 140px;
-  /* scroll-padding-top: 40px; */
 }
 img {
   max-width: 100%;
@@ -436,8 +435,8 @@ img {
     width: 70%;
   }
   .youtube-iframe {
-    width: 60%;
-    height: 402px;
+    width: 61%;
+    height: 412px;
   }
   .map-and-reg-form {
     width: 60%;
@@ -475,7 +474,7 @@ img {
   }
   .youtube-iframe {
     width: 50%;
-    height: 500px;
+    height: 509px;
   }
   .map-and-reg-form {
     width: 51%;
