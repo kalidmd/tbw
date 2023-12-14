@@ -152,6 +152,9 @@
 .menu--social-icon {
     width: 25px;
 }
+.menu--social-icon:hover {
+    opacity: 0.8;
+}
 /* --MEDIA QUERY DISABLE BURGER-MENU FOR SCREEN MORE THAN 481PX-- */
 @media screen and (min-width: 481px) {
     .bm-burger-button {

@@ -34,7 +34,9 @@
 .tbw-logo {
     width: 65px;
 }
-
+.tbw-logo:hover {
+    opacity: 0.9;
+}
 /* --PAGES-- */
 .nav-pages {
     display: flex;
@@ -49,11 +51,17 @@
 .nav-icon-img {
     width: 25px;
 }
+.nav-icon-img:hover {
+    opacity: 0.9;
+}
 .nav-icon-a {
     font-size: 0px;
 }
 .nav-page-item.active {
     border-bottom: 2px solid #fff;
+}
+.nav-page-item:hover {
+    opacity: 0.9;
 }
 /* --MEDIA QUERY DISABLE NAV PAGES FOR SCREEN LESS THAN 481PX-- */
 @media screen and (max-width: 480px) {

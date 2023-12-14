@@ -29,6 +29,9 @@
 .social--icon {
     width: 22px;
 }
+.social--icon:hover {
+    opacity: 0.8;
+}
                 /* ADDRESS OR LEFT SIDE CONTAINER */
 .left-side-footer {
     /* background-color: green; */

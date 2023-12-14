@@ -22,7 +22,7 @@ function NavBar() {
       <nav id="nav-bar" className={navBar ? "nav-bar active": "nav-bar"}>
         <div className="nav-width">
           <a style={{fontSize: "0"}} href="/"> 
-            <img className="tbw-logo" src={TbwLogo} alt="logo"/> 
+            <img className="tbw-logo" src={TbwLogo} alt="truth by will"/> 
           </a>
         
             <div className="nav-pages">

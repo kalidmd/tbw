@@ -15,7 +15,10 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="right-side-footer">
-          <img className='footer--tbw-logo' src={TbwLogo} alt="truth by will" />
+          {/* <img className='footer--tbw-logo' src={TbwLogo} alt="truth by will" /> */}
+          <a style={{fontSize: "0"}} href="/"> 
+            <img className="footer--tbw-logo" src={TbwLogo} alt="truth by will"/> 
+          </a>
 
           <div className="guiding-social-container">
             <p className="guiding-people">Guiding people to gain the TRUTH that leads to life.</p>
