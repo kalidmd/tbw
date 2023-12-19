@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 import Register from '../components/Register';
 import Bereket from '../assets/image/Bereket-close.png'
 import Yonatan from '../assets/image/Yonatan-close.png'
@@ -6,40 +7,23 @@ import BlogData from '../data/BlogData'
 
 
 function Home() {
-  // const [welcomeText, setWelcomeText] = useState("");
-
-  // const welcomeTextLoad = () => { 
-  //     setWelcomeText("Truth By Will.");
-  //     // setTimeout(()=> {
-  //     //     setWelcomeText("እንኳን ወደ እውነትን በፍቃድ በደህና መጡ.");
-  //     // }, 6000)
-  // };
-
-  // useEffect(() => {
-  //   welcomeTextLoad();
-  //   const intervalId = setInterval(welcomeTextLoad, 12010);
-
-  //   return () => clearInterval(intervalId);
-  // }, [])
- 
-  
+  const { t } = useTranslation();
   return (
     <main>
-      
-
       {/* 2ND SECTION ESSENTIAL THINGS*/}
       <section id="essential" className="essential-container">
 
         <div className="essential-content">
           <div className="welcome-text-cont">
-             <span className="welcome-text-span">Welcome To</span> <span className="welcome-text">Truth By Will. </span>
+             {/* <span className="welcome-text-span"> {t('welcome')} </span>  */}
+             <span className="welcome-text"> {t('truth_by_will')} </span>
           </div>
 
-          <p className='essential-header'>Essential things in life are given for free.</p>
-          <p className='essential-paragraph'>Get the ultimate success in life through our weekly classes for free.</p>
+          <p className='essential-header'>{t('essential_header')}</p>
+          <p className='essential-paragraph'> {t('essential_paragraph')} </p>
           
           <a href="#reg-form">
-            <button className="register-btn"> Register Now </button>
+            <button className="register-btn"> {t('register_now')} </button>
           </a>
         </div>
       </section>
@@ -47,7 +31,7 @@ function Home() {
       {/* 3RD SECTION LECTURES SECTION*/}
       <section className="lectures-container">
         <p className="lectures-header">
-          Keep up this journey with our teachers.
+          {t('lectures-header')}
         </p>
         <div className="lectures-profile">
           <div className="lecture-profile">
@@ -55,7 +39,7 @@ function Home() {
               className="lecture-image" 
               src={Yonatan} alt="Yonatan Gena" 
             />
-            <p className="lecture-name yoni">Yonatan Gena</p>
+            <p className="lecture-name yoni"> {t('yonatan_gena')} </p>
           </div>
 
           <div className="lecture-profile">
@@ -63,7 +47,7 @@ function Home() {
               className="lecture-image" 
               src={Bereket} alt="Bereket Teka" 
             />
-            <p className="lecture-name beki">Bereket Teka</p>
+            <p className="lecture-name beki"> {t('bereket_teka')} </p>
           </div>
         </div>
       </section>
@@ -71,21 +55,21 @@ function Home() {
       {/* 4TH SECTION BLOG SECTION*/}
       <section className="home--blog-container">
         <div className="home--blog-content">
-          <p className="home--blog-header">Most Recent Blog Post</p>
+          <p className="home--blog-header"> {t('blog_header')} </p>
           <p className="home--blog-title"> "{ BlogData[BlogData.length - 1].blogTitle }" </p>
           <p className="home--blog-description"> { BlogData[BlogData.length - 1].blogDescription }</p> 
           <a className="home--blog-link" href="/blog">
-            <p className="home--blog-read-more"> Read More </p> <span className="read-more-arrow">→</span>
+            <p className="home--blog-read-more"> {t('read_more')} </p> <span className="read-more-arrow">→</span>
           </a>
-          <div className="date-and-minute"> {BlogData[BlogData.length - 1].date} • {BlogData[BlogData.length - 1].min} READ </div>
-          <p className="home--blog-truth-by-will-hash">#truth_by_will</p>
+          <div className="date-and-minute"> {BlogData[BlogData.length - 1].date} • {BlogData[BlogData.length - 1].min} {t('read')} </div>
+          <p className="home--blog-truth-by-will-hash"> {t('truth_by_will_hash')} </p>
         </div>
       </section>
 
       {/* 5TH SECTION LATEST VIDEOS*/}
       <section className="latest-video-container">
         <div className="latest-video-header">
-          Most Recent Video
+          {t('video_header')}
         </div>
 
         <iframe 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 import '../styles/footer.css'
 import YoutubeIcon from '../assets/icon/youtube-white.png'
 import FacebookIcon from '../assets/icon/facebook-white.png'
@@ -10,7 +11,8 @@ import PhoneIcon from '../assets/icon/phone-white.png'
 import TbwLogo from '../assets/logo/TBW_White_Transparent.png'
 
 function Footer() {
-   
+  const { t } = useTranslation();
+  
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -21,7 +23,7 @@ function Footer() {
           </a>
 
           <div className="guiding-social-container">
-            <p className="guiding-people">Guiding people to gain the TRUTH that leads to life.</p>
+            <p className="guiding-people"> {t('guiding_people')} </p>
           
             <div className="social-medias">
               <a 
@@ -86,14 +88,14 @@ function Footer() {
               alt="Location icon" 
             /> 
             <p className="location-text address-text">
-              Addis Ababa, Ethiopia
+              {t('country')}
               <br /> 
-              Hayat Hospital to bole brass road, TGL building, 4th floor. 
+               {t('street')} 
             </p>
           </div>
         </div>
       </div>
-      <p className="copyright">© Truth By Will</p>
+      <p className="copyright">© {t('truth_by_will')}</p>
     </footer>
   )
 }

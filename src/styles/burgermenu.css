@@ -34,6 +34,21 @@
 .back-to-top.active {
     display: flex;
 }
+         /* ---LANGUAGE BUTTON--- */
+.lang-label {
+    color: #fff;
+    font-size: 19px;
+    font-weight: normal;
+}         
+.lang-btn {
+    width: fit-content;
+    color: var(--blue);
+    margin-bottom: 10px;
+    padding: 1px 3px;
+    background-color: #fff;
+    font-size: 15px;
+    border-radius: var(--border-rad);
+}
           /* ---HORIZONTAL LINE--- */
 .menu--hr {
     width: 80% !important; 

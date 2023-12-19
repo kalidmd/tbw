@@ -1,0 +1,40 @@
+{
+    "home": "HOME",
+    "blog": "BLOG",
+    "attend": "ATTEND",
+    "about": "ABOUT",
+    "lang": "Lang:",
+    
+    "welcome": "Welcome To",
+    "truth_by_will": "Truth By Will",
+    "essential_header": "Essential things in life are given for free.",
+    "essential_paragraph": "Get the ultimate success in life through our weekly classes for free.",
+    "register_now": "Register Now",
+    "lectures-header": "Keep up this journey with our teachers.",
+    "yonatan_gena": "Yonatan Gena",
+    "bereket_teka": "Bereket Teka",
+    "blog_header": "Most Recent Blog",
+    "read_more": "Read More",
+    "read": "READ",
+    "truth_by_will_hash": "#truth_by_will",
+    "video_header": "Most Recent Video",
+          
+    "classroom": "Classroom",
+    "attend_text": "You can attend our introduction class in person for free at our convenient classroom every Sunday from 10:30 AM - 12:00 AM that lasts for an hour and a half.",
+    "attend_for_more_info": "For more information, call us at +2519 11 75 30 88 or +2517 03 93 81 11. You can also register in the form below to join our introductory class straight away.",
+    "attend_map_label": "Find Us On Google Map",
+    "tgl_label": "We are at TGL BLDG, 4th FLOOR.",
+
+    "who_we_are": "Who We Are",
+    "our_aim": "Our Aim",
+    "our_aim_description": "This is a place through which we convey teachings from truth to human beings with humility and love, and the purpose is that through the knowledge revealed in this site, they will use their free will to make lifechanging decision. Thus, our primary aim is to present a call of love that presents humanity opportunity to regain its “natural identity” - lost for many generations - through “life lessons”. The lessons are for all mankind regardless of their race, gender, age, standard of living, religion, skin color or political opinion. We use plain language to express profound truths and communicate rather complex concepts; but of course, without compromising the logical explanations of the foundational issues discussed or distorting the content of fundamental ideas; and ensuring the channel is suitable for all types of viewers. We are too familiar with the message we are transferring, that we are confident its articulations are complete and precise.",
+
+    "register_here": "Register Here For Free!",    
+    "reg_name": "Name",
+    "reg_email": "Email",
+    "reg_message": "Message (optional)",
+    
+    "guiding_people": "Guiding people to gain the TRUTH that leads to life.",
+    "country": "Addis Ababa, Ethiopia",
+    "street": "Hayat Hospital to bole brass road, TGL building, 4th floor" 
+}

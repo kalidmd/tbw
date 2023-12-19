@@ -1,4 +1,7 @@
 import React, {useState} from 'react'
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
 import '../styles/burgermenu.css'
@@ -27,8 +30,6 @@ import AttendIconLight from '../assets/icon/attend-white.png'
 // import VideoIconLight from '../assets/icon/video-white.png'
 import BlogIconLight from '../assets/icon/blog-white.png'
 
-
-
 function BurgerMenu() {
   const [activeHomeIcon, setActiveHomeIcon] = useState(false)
   const [activeAboutIcon, setActiveAboutIcon] = useState(false)
@@ -37,6 +38,22 @@ function BurgerMenu() {
   const [activeBlogIcon, setActiveBlogIcon] = useState(false)
 
   const [backToTop, setBackToTop] = useState(false)
+
+  const { t } = useTranslation()
+  const currentLanguageCode = cookies.get('i18next') || 'en';
+  const notCurrentLanguageCode = currentLanguageCode === 'en' ? 'አማርኛ' : 'English';
+  
+  const [code, setCode] = useState(currentLanguageCode);
+  const [changeBtn, setChangeBtn] = useState(notCurrentLanguageCode);
+
+  const changeLang = () => {
+    const newCode = code === 'en' ? 'am' : 'en';
+    const newBtn = changeBtn === 'አማርኛ' ? 'English' : 'አማርኛ';
+    setCode(newCode);
+    setChangeBtn(newBtn);
+    i18next.changeLanguage(newCode);
+  }
+
   let backToTopId = "#essential"
   if(activeAboutIcon === true) {
     backToTopId = "#about"
@@ -54,7 +71,7 @@ function BurgerMenu() {
     }
   }
 
-  window.addEventListener('scroll', scrollBack);  
+  window.addEventListener('scroll', scrollBack);    
 
   return (
     <BrowserRouter>
@@ -75,7 +92,7 @@ function BurgerMenu() {
                     to={"/"}
                 >
                   <div className="icon-and-menu">
-                    <img className="menu-icon" src={activeHomeIcon ? HomeIconDark : HomeIconLight} alt="Home"/> HOME
+                    <img className="menu-icon" src={activeHomeIcon ? HomeIconDark : HomeIconLight} alt="Home"/> {t('home')}
                   </div>
                 </NavLink>
               
@@ -89,7 +106,7 @@ function BurgerMenu() {
                     to={"/blog"}
                 >
                   <div className="icon-and-menu">
-                    <img className="menu-icon" src={activeBlogIcon ? BlogIconDark : BlogIconLight} alt="Blog" /> BLOG
+                    <img className="menu-icon" src={activeBlogIcon ? BlogIconDark : BlogIconLight} alt="Blog" /> {t('blog')}
                   </div>
                 </NavLink>
 
@@ -103,7 +120,7 @@ function BurgerMenu() {
                     to={"/attend"}
                 >
                   <div className="icon-and-menu">
-                    <img className="menu-icon" src={activeAttendIcon ? AttendIconDark : AttendIconLight} alt="Attend" /> ATTEND
+                    <img className="menu-icon" src={activeAttendIcon ? AttendIconDark : AttendIconLight} alt="Attend" /> {t('attend')}
                   </div>
                 </NavLink>
 
@@ -117,14 +134,24 @@ function BurgerMenu() {
                     to={"/about"}
                 >
                   <div className="icon-and-menu">
-                    <img className="menu-icon" src={activeAboutIcon ? AboutUsIconDark : AboutUsIconLight } alt="About" /> ABOUT
+                    <img className="menu-icon" src={activeAboutIcon ? AboutUsIconDark : AboutUsIconLight } alt="About" /> {t('about')}
                   </div>
                 </NavLink> 
     
             </div>
 
-           
             <div className="menu--social-medias-cont">
+
+              <div className="lang-container">
+                <span className="lang-label">{t('lang')} </span> 
+                <button 
+                  onClick={changeLang} 
+                  className="lang-btn"
+                > 
+                  {changeBtn} 
+                </button>
+              </div>
+
               <hr className="menu--hr" />
 
               <div className="menu--social-medias">

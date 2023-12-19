@@ -1,0 +1,43 @@
+{
+    "home": "ቤት",
+    "blog": "ብሎግ",
+    "attend": "ይከታተሉ",
+    "about": "ስለእኛ",
+    "lang": "ቋንቋ:",
+
+    "welcome": "እንኳን በደህና መጡ ወደ",
+    "truth_by_will": "እውነትን በፍቃድ",
+    "essential_header": " በሂወታችን በጣም አስፈላጊ ማለትም ወሳኝ ነገሮች በነጻ የተገኙ ናቸው።",
+    "essential_paragraph": "ለተውሰኑ ሳምንታት በሚቆዩት ተከታታይ ሳምንታዊ ትምህርቶቻችን የመጨረሻውን የስብዕና ስኬት ያለምንም ክፍያ በነጻ ይጎናጸፉ።",
+    "register_now": "አሁኑኑ ይመዝገቡ",
+    "lectures-header": "ይህንን የሂወት ትምህርት ከአስተማሪዎቻችን ጋር በብዙ ትትህና እና ፍቅር ይጓዙ።",
+    "yonatan_gena": "ዮናታን ገና",
+    "bereket_teka": "በረከት ተካ",
+    "blog_header": "የቅርብ ጊዜ ብሎግ",
+    "read_more": "ሙሉውን ያንብቡ",
+    "read": "ንባብ",
+    "truth_by_will_hash": "#እውነትን_በፍቃድ",
+    "video_header": "የቅርብ ጊዜ ቪዲዮ",
+          
+    "classroom": "መማሪያ ክፍል",
+    "attend_text": "ዘውትር እሁድ ከ 4:30 - 6፡00 ሰዓት የአንድ ሰዓት ተኩል ክፍለ ጊዜ የሚወስድ የመግቢያ ትምህርት ስላለን ምቹ በሆነው የትምህርት ስፍራችን በአካል በመገኘት በነጻ መታደም ይችላሉ።",
+    "attend_for_more_info": "ለበለጠ መረጃ በ +2519 11 75 30 88 ወይም በ +2517 03 93 81 11 ይደውሉልን፤ አልያም ከዚህ በታች ባለው ፎርም በመመዝገብ ቀጥታ የመግቢያ ትምህርታችንን ይካፈሉ።",
+    "attend_map_label": "በጎግል ካርት ላይ ያግኙን",
+    "tgl_label": "ትጌላ ህንጻ 4ኛ ፎቅ ላይ እንገኛለን",
+
+    "who_we_are": "እኛ ማነን",
+    "our_aim": "አላማችን",
+    "our_aim_description": "This is a place through which we convey teachings from truth to human beings with humility and love, and the purpose is that through the knowledge revealed in this site, they will use their free will to make lifechanging decision. Thus, our primary aim is to present a call of love that presents humanity opportunity to regain its “natural identity” - lost for many generations - through “life lessons”. The lessons are for all mankind regardless of their race, gender, age, standard of living, religion, skin color or political opinion. We use plain language to express profound truths and communicate rather complex concepts; but of course, without compromising the logical explanations of the foundational issues discussed or distorting the content of fundamental ideas; and ensuring the channel is suitable for all types of viewers. We are too familiar with the message we are transferring, that we are confident its articulations are complete and precise.",
+
+    "register_here": "እዚህ በነጻ ይመዝገቡ!",    
+    "reg_name": "ስም",
+    "reg_name_placeholder": "ሙሉ ስምዎን ያስገቡ",
+    "reg_email": "ኢሜይል",
+    "reg_email_placeholder": "ኢሜይሎን ያስገቡ",
+    "reg_message": "መልዕክት (አማራጭ)",
+    "reg_message_placeholder": "መልዕክት ካሎት ያስቀምጡልን",
+
+    "guiding_people": "የሰው ልጅ ወደ ሂወት የሚያመራበት እውነት",
+    "country": "አዲስ አበባ, ኢትዮጲያ",
+    "street": "ከሃያት ሆስፒታል ወደ ቦሌ ብራስ በሚወስደው መንገድ፤ ትጌላ ህንጻ፤ 4ኛ ፎቅ" 
+}
