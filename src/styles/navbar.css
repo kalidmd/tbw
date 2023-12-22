@@ -67,14 +67,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 65px;
+    width: 70px;
 }
 .nav-lang-btn {
     background-color: #fff;
     padding: 1px 3px;
     font-size: 14px;
     border-radius: var(--border-rad);
-    /* border: none; */
+    color: var(--blue);
     cursor: pointer;
 }
 /* --MEDIA QUERY DISABLE NAV PAGES FOR SCREEN LESS THAN 481PX-- */

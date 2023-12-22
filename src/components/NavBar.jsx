@@ -73,7 +73,7 @@ function NavBar() {
                 reloadDocument
                 to={"/attend"}
             >
-              {t('attend')}
+              {t('class')}
             </NavLink>
 
             <NavLink 

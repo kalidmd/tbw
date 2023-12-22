@@ -120,7 +120,7 @@ function BurgerMenu() {
                     to={"/attend"}
                 >
                   <div className="icon-and-menu">
-                    <img className="menu-icon" src={activeAttendIcon ? AttendIconDark : AttendIconLight} alt="Attend" /> {t('attend')}
+                    <img className="menu-icon" src={activeAttendIcon ? AttendIconDark : AttendIconLight} alt="Attend" /> {t('class')}
                   </div>
                 </NavLink>
 

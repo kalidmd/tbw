@@ -3,11 +3,13 @@ import { useTranslation } from "react-i18next";
 import Register from '../components/Register';
 import Bereket from '../assets/image/Bereket-close.png'
 import Yonatan from '../assets/image/Yonatan-close.png'
-import BlogData from '../data/BlogData'
+// import BlogData from '../data/BlogData'
 
 
 function Home() {
   const { t } = useTranslation();
+  const blogs = t('blog_data', {returnObjects: true})
+  console.log(blogs);
   return (
     <main>
       {/* 2ND SECTION ESSENTIAL THINGS*/}
@@ -56,6 +58,19 @@ function Home() {
       <section className="home--blog-container">
         <div className="home--blog-content">
           <p className="home--blog-header"> {t('blog_header')} </p>
+          <p className="home--blog-title"> "{ blogs[blogs.length - 1].blog_title }" </p>
+          <p className="home--blog-description"> { blogs[blogs.length - 1].blog_description }</p> 
+          <a className="home--blog-link" href="/blog">
+            <p className="home--blog-read-more"> {t('read_more')} </p> <span className="read-more-arrow">→</span>
+          </a>
+          <div className="date-and-minute"> {blogs[blogs.length - 1].date} • {blogs[blogs.length - 1].min} {t('read')} </div>
+          <p className="home--blog-truth-by-will-hash"> {t('truth_by_will_hash')} </p>
+        </div>
+      </section>
+      {/* 4TH SECTION BLOG SECTION
+      <section className="home--blog-container">
+        <div className="home--blog-content">
+          <p className="home--blog-header"> {t('blog_header')} </p>
           <p className="home--blog-title"> "{ BlogData[BlogData.length - 1].blogTitle }" </p>
           <p className="home--blog-description"> { BlogData[BlogData.length - 1].blogDescription }</p> 
           <a className="home--blog-link" href="/blog">
@@ -64,7 +79,7 @@ function Home() {
           <div className="date-and-minute"> {BlogData[BlogData.length - 1].date} • {BlogData[BlogData.length - 1].min} {t('read')} </div>
           <p className="home--blog-truth-by-will-hash"> {t('truth_by_will_hash')} </p>
         </div>
-      </section>
+      </section> */}
 
       {/* 5TH SECTION LATEST VIDEOS*/}
       <section className="latest-video-container">
