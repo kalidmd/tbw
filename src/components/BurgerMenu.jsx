@@ -142,11 +142,11 @@ function BurgerMenu() {
 
             <div className="menu--social-medias-cont">
 
-              <div className="lang-container">
-                <span className="lang-label">{t('lang')} </span> 
+              <div className="burger-lang-container">
+                <span className="burger-lang-label">{t('lang')} </span> 
                 <button 
                   onClick={changeLang} 
-                  className="lang-btn"
+                  className="burger-lang-btn"
                 > 
                   {changeBtn} 
                 </button>

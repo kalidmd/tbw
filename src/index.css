@@ -37,8 +37,8 @@ img {
 }
 .loading-ring {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   animation: loading-ring 1.5s linear infinite;
 }
@@ -62,16 +62,6 @@ img {
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(255, 255, 255, .3);
 }
-/* .loading-text {
-  color: #737373;
-  font-size: 13px;
-  animation: loading-text 5s ease-in-out infinite;
-}
-@keyframes loading-text {
-  50% {
-    color: transparent;
-  }
-} */
 .link {
   text-decoration: none;
   font-size: 0;

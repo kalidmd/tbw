@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
 import { BrowserRouter, NavLink } from 'react-router-dom';
 import '../styles/navbar.css'
 import TbwLogo from "../assets/logo/TBW_White_Transparent.png"
@@ -7,6 +10,20 @@ import YoutubeIcon from '../assets/icon/youtube-white.png'
 function NavBar() {
   // -----navbar scroll state-----
   const [navBar, setNavBar] = useState(false);
+  const { t } = useTranslation()
+  const currentLanguageCode = cookies.get('i18next') || 'en';
+  const notCurrentLanguageCode = currentLanguageCode === 'en' ? 'አማ' : 'Eng';
+  
+  const [code, setCode] = useState(currentLanguageCode);
+  const [changeBtn, setChangeBtn] = useState(notCurrentLanguageCode);
+
+  const changeLang = () => {
+    const newCode = code === 'en' ? 'am' : 'en';
+    const newBtn = changeBtn === 'አማ' ? 'Eng' : 'አማ';
+    setCode(newCode);
+    setChangeBtn(newBtn);
+    i18next.changeLanguage(newCode);
+  }
 
   const scrollNavbar = () => {
     if(window.scrollY >= 25){
@@ -34,7 +51,7 @@ function NavBar() {
                 reloadDocument 
                 to={"/"}
             >
-              HOME
+              {t('home')}
             </NavLink>
           
             <NavLink 
@@ -45,7 +62,7 @@ function NavBar() {
                 reloadDocument
                 to={"/blog"}
             >
-              BLOG   
+              {t('blog')}   
             </NavLink>
 
             <NavLink 
@@ -56,7 +73,7 @@ function NavBar() {
                 reloadDocument
                 to={"/attend"}
             >
-              ATTEND
+              {t('attend')}
             </NavLink>
 
             <NavLink 
@@ -67,18 +84,30 @@ function NavBar() {
                 reloadDocument
                 to={"/about"}
             >
-              ABOUT
+              {t('about')}
             </NavLink> 
           </div>
           
-          <a 
-            className="nav-icon-a"
-            target="_blank" 
-            href="https://www.youtube.com/@truthByWill"
-            rel="noopener noreferrer"
-          >
-            <img className="nav-icon-img" src={YoutubeIcon} alt="youtube"/>
-          </a>
+          <div className="lang-youtube-cont">
+            <div className="nav-lang-container">
+              {/* <span className="lang-label">{t('lang')} </span>  */}
+              <button 
+                onClick={changeLang} 
+                className="nav-lang-btn"
+              > 
+                {changeBtn} 
+              </button>
+            </div>
+
+            <a 
+              className="nav-icon-a"
+              target="_blank" 
+              href="https://www.youtube.com/@truthByWill"
+              rel="noopener noreferrer"
+            >
+              <img className="nav-icon-img" src={YoutubeIcon} alt="youtube"/>
+            </a>
+          </div>
 
         </div>
 

@@ -31,8 +31,11 @@
 
     "register_here": "Register Here For Free!",    
     "reg_name": "Name",
+    "reg_name_placeholder": "Enter Your Name",
     "reg_email": "Email",
+    "reg_email_placeholder": "Enter Your Email",
     "reg_message": "Message (optional)",
+    "reg_message_placeholder": "Leave Us a Message",
     
     "guiding_people": "Guiding people to gain the TRUTH that leads to life.",
     "country": "Addis Ababa, Ethiopia",
