@@ -79,7 +79,7 @@ export default function Register () {
         <input 
           className={isMessageSent ? "sent-btn" : "send-btn"} 
           type="submit"  
-          value={"Send"}  
+          value={t('send')}  
         />
       </form>
     </div>
