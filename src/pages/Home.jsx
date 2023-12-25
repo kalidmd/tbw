@@ -9,7 +9,8 @@ import Yonatan from '../assets/image/Yonatan-close.png'
 function Home() {
   const { t } = useTranslation();
   const blogs = t('blog_data', {returnObjects: true})
-  console.log(blogs);
+  document.title = (t('title'));
+
   return (
     <main>
       {/* 2ND SECTION ESSENTIAL THINGS*/}
