@@ -15,13 +15,13 @@
     box-shadow: 0 1px 5px var(--grey-color);
 }
 .about-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     padding-bottom: 10px;
     color: var(--blue);
 }
 .about-description{
-    font-size: 19px;
+    font-size: 18px;
     letter-spacing: 0.4px;
     font-weight: 500;
 }

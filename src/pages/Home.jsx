@@ -1,5 +1,7 @@
 import React from 'react'
 import { useTranslation } from "react-i18next";
+import cookies from "js-cookie";
+
 import Register from '../components/Register';
 import Bereket from '../assets/image/Bereket-close.png'
 import Yonatan from '../assets/image/Yonatan-close.png'
@@ -10,6 +12,8 @@ function Home() {
   const { t } = useTranslation();
   const blogs = t('blog_data', {returnObjects: true})
   document.title = (t('title'));
+  const currentLang = cookies.get('i18next');
+  console.log(currentLang);
 
   return (
     <main>
@@ -59,6 +63,7 @@ function Home() {
       <section className="home--blog-container">
         <div className="home--blog-content">
           <p className="home--blog-header"> {t('blog_header')} </p>
+          {currentLang === 'en' && <p className="eng-version-not-yet">Sorry, The English version isn't available at the moment.</p>}
           <p className="home--blog-title"> "{ blogs[blogs.length - 1].blog_title }" </p>
           <p className="home--blog-description"> { blogs[blogs.length - 1].blog_description }</p> 
           <a className="home--blog-link" href="/blog">
