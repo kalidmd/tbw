@@ -61,7 +61,7 @@
     border-bottom: 2px solid #fff;
 }
 .nav-page-item:hover {
-    opacity: 0.9;
+    border-bottom: 2px solid #cac8c8;
 }
 .lang-youtube-cont {
     display: flex;
@@ -71,15 +71,16 @@
 }
 .nav-lang-btn {
     padding: 1px 3px;
-    /* font-size: 20px; */
     background: none;
     border: 1px solid #939191;
     border-radius: var(--border-rad);
     cursor: pointer;
-    /* color: var(--blue); */
 }
 .nav-lang-btn:hover {
-    border: 1px solid #000;
+    border: 1px solid #fff;
+}
+.flag {
+    width: 20px;
 }
 /* --MEDIA QUERY DISABLE NAV PAGES FOR SCREEN LESS THAN 481PX-- */
 @media screen and (max-width: 480px) {

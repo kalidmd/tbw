@@ -21,14 +21,15 @@ import TelegramIcon from '../assets/icon/telegram-white.png'
 import HomeIconDark from '../assets/icon/home.png'
 import AboutUsIconDark from '../assets/icon/about-us.png'
 import AttendIconDark from '../assets/icon/attend.png'
-// import VideoIconDark from '../assets/icon/video.png'
 import BlogIconDark from '../assets/icon/blog.png'
 
 import HomeIconLight from '../assets/icon/home-white.png'
 import AboutUsIconLight from '../assets/icon/about-us-white.png'
 import AttendIconLight from '../assets/icon/attend-white.png'
-// import VideoIconLight from '../assets/icon/video-white.png'
 import BlogIconLight from '../assets/icon/blog-white.png'
+
+import etFlag from '../assets/image/et-flag.png'
+import usFlag from '../assets/image/us-flag.png'
 
 function BurgerMenu() {
   const [activeHomeIcon, setActiveHomeIcon] = useState(false)
@@ -41,18 +42,20 @@ function BurgerMenu() {
 
   const { t } = useTranslation()
   const currentLanguageCode = cookies.get('i18next') || 'en';
-  const notCurrentLanguageCode = currentLanguageCode === 'en' ? '🇪🇹 አማርኛ' : '🇺🇸 English';
+  const notCurrentLanguageCode = currentLanguageCode === 'en' ? etFlag : usFlag;
   
   const [code, setCode] = useState(currentLanguageCode);
   const [changeBtn, setChangeBtn] = useState(notCurrentLanguageCode);
 
   const changeLang = () => {
     const newCode = code === 'en' ? 'am' : 'en';
-    const newBtn = changeBtn === '🇪🇹 አማርኛ' ? '🇺🇸 English' : '🇪🇹 አማርኛ';
+    const newBtn = changeBtn === etFlag ? usFlag  : etFlag;
     setCode(newCode);
     setChangeBtn(newBtn);
     i18next.changeLanguage(newCode);
   }
+  // console.log(changeBtn);
+  const langText = changeBtn === etFlag ? "አማርኛ" : "ENGLISH";
 
   let backToTopId = "#essential"
   if(activeAboutIcon === true) {
@@ -144,12 +147,12 @@ function BurgerMenu() {
 
               <div className="burger-lang-container">
                 <span className="burger-lang-label">{t('lang')} </span> 
-                <button 
+                <div 
                   onClick={changeLang} 
                   className="burger-lang-btn"
                 > 
-                  {changeBtn} 
-                </button>
+                  <img className="flag burger-flag" src={changeBtn} alt="flag" /> <span className="flag-lang"> {langText} </span>
+                </div>
               </div>
 
               <hr className="menu--hr" />

@@ -13,7 +13,6 @@ function Home() {
   const blogs = t('blog_data', {returnObjects: true})
   document.title = (t('title'));
   const currentLang = cookies.get('i18next');
-  console.log(currentLang);
 
   return (
     <main>

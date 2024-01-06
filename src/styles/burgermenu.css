@@ -35,23 +35,35 @@
     display: flex;
 }
          /* ---LANGUAGE BUTTON--- */
+.burger-lang-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+    width: 160px;
+    /* background-color: green; */
+}
 .burger-lang-label {
     color: #fff;
     font-size: 19px;
     font-weight: normal;
+    padding-right: 5px;
 }         
 .burger-lang-btn {
-    width: fit-content;
-    color: var(--blue);
-    margin-bottom: 10px;
+    display: inline-block;
+    background-color: red;
     padding: 1px 3px;
-    /* background-color: #fff; */
     background: none;
     border: 1px solid #939191;
     border-radius: var(--border-rad);
-    color: #fff;
-    font-size: 16px;
     cursor: pointer;
+}
+.burger-lang-btn:hover {
+    border: 1px solid #fff;
+}
+.flag-lang {
+    font-size: 16px;
+    color: #fff;
 }
           /* ---HORIZONTAL LINE--- */
 .menu--hr {
