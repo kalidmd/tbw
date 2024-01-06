@@ -100,7 +100,7 @@
         height: 400px;
     }
     .tgl-buil {
-        width: 400px;
+        width: 380px;
     }
 }
 /* --MEDIA QUERY FOR SMALL SCREEN LAPTOPS FROM 1025PX UPTO 1200PX -- */
@@ -119,7 +119,7 @@
     }
     .attend-text {
         width: 400px;
-        font-size: 22px;
+        /* font-size: 22px; */
         margin: 0;
     }
     .attend-map-container {

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from "react-i18next";
-import '../styles/attend.css'
+import '../styles/class.css'
+
 import Register from '../components/Register';
 import TglBuilding from '../assets/image/tgl-buil.jpg'
 import ClassRoom from '../assets/image/our-classroom.jpg'

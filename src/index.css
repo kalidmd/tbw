@@ -254,6 +254,37 @@ img {
   height: 340px;
   margin-top: 30px;
 }
+/* --page not found-- */
+.page-not-found-cont {
+  /* background: green; */
+  width: var(--maximum-width);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.page-not-found-cont h1 {
+  font-size: 45px;
+  color: rgb(232, 37, 37);
+}
+.page-not-found-cont p {
+  font-size: 18px;
+}
+.inline {
+  display: flex;
+  /* background: green; */
+  align-items: center;
+}
+.inline a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 600;
+  font-size: 18px;
+}
+
 /* Common Break Points in media query {
       320px — 480px: Mobile devices
       481px — 768px: iPads, Tablets
