@@ -19,7 +19,7 @@
 }
 .classroom-label {
     color: var(--blue);
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     padding-top: 5px;
 }
@@ -28,7 +28,7 @@
 }
 .attend-text {
     margin: 12px auto 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #000;
     /* letter-spacing: 0.2px; */
@@ -47,7 +47,7 @@
 .attend-map-label, .tgl-buil-label {
     color: var(--blue);
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     padding-bottom: 17px;
 }

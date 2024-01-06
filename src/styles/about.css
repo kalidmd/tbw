@@ -10,18 +10,20 @@
 .about-content {
     margin-bottom: 25px;
     background-color: #fff;
-    padding: 18px;
+    /* padding: 18px; */
+    padding: 9px;
     border-radius: var(--border-rad);
     box-shadow: 0 1px 5px var(--grey-color);
 }
 .about-title {
-    font-size: 24px;
-    font-weight: 600;
-    padding-bottom: 10px;
+    font-size: 23px;
+    font-weight: 700;
+    /* padding-bottom: 10px; */
+    padding-bottom: 2px;
     color: var(--blue);
 }
 .about-description{
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 0.4px;
     font-weight: 500;
 }

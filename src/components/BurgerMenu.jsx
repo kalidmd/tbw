@@ -41,14 +41,14 @@ function BurgerMenu() {
 
   const { t } = useTranslation()
   const currentLanguageCode = cookies.get('i18next') || 'en';
-  const notCurrentLanguageCode = currentLanguageCode === 'en' ? 'አማርኛ' : 'English';
+  const notCurrentLanguageCode = currentLanguageCode === 'en' ? '🇪🇹 አማርኛ' : '🇺🇸 English';
   
   const [code, setCode] = useState(currentLanguageCode);
   const [changeBtn, setChangeBtn] = useState(notCurrentLanguageCode);
 
   const changeLang = () => {
     const newCode = code === 'en' ? 'am' : 'en';
-    const newBtn = changeBtn === 'አማርኛ' ? 'English' : 'አማርኛ';
+    const newBtn = changeBtn === '🇪🇹 አማርኛ' ? '🇺🇸 English' : '🇪🇹 አማርኛ';
     setCode(newCode);
     setChangeBtn(newBtn);
     i18next.changeLanguage(newCode);

@@ -3,23 +3,26 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import cookies from "js-cookie";
 import { BrowserRouter, NavLink } from 'react-router-dom';
+// import FlagSvg from './FlagSvg';
+
 import '../styles/navbar.css'
+
 import TbwLogo from "../assets/logo/TBW_White_Transparent.png"
 import YoutubeIcon from '../assets/icon/youtube-white.png'
 
 function NavBar() {
   // -----navbar scroll state-----
   const [navBar, setNavBar] = useState(false);
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const currentLanguageCode = cookies.get('i18next') || 'en';
-  const notCurrentLanguageCode = currentLanguageCode === 'en' ? 'አማ' : 'EN';
+  const notCurrentLanguageCode = currentLanguageCode === 'en' ? '🇪🇹' : '🇺🇸';
   
   const [code, setCode] = useState(currentLanguageCode);
   const [changeBtn, setChangeBtn] = useState(notCurrentLanguageCode);
 
   const changeLang = () => {
     const newCode = code === 'en' ? 'am' : 'en';
-    const newBtn = changeBtn === 'አማ' ? 'EN' : 'አማ';
+    const newBtn = changeBtn === '🇪🇹' ? '🇺🇸' : '🇪🇹';
     setCode(newCode);
     setChangeBtn(newBtn);
     i18next.changeLanguage(newCode);
@@ -91,14 +94,14 @@ function NavBar() {
           <div className="lang-youtube-cont">
             <div className="nav-lang-container">
               {/* <span className="lang-label">{t('lang')} </span>  */}
-              <button 
+              <div 
                 onClick={changeLang} 
                 className="nav-lang-btn"
               > 
                 {changeBtn} 
-              </button>
+              </div>
             </div>
-
+         
             <a 
               className="nav-icon-a"
               target="_blank" 

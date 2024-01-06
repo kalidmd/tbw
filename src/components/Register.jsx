@@ -40,7 +40,7 @@ export default function Register () {
   };
 
   if(isMessageSent === true) {
-    alert("Registered Successfully 🎉, Check Out Your Email")
+    alert( t('registered'))
     setIsMessageSent(false)
   }
 

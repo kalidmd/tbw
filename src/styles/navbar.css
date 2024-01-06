@@ -70,12 +70,16 @@
     width: 70px;
 }
 .nav-lang-btn {
-    background-color: #fff;
     padding: 1px 3px;
-    font-size: 14px;
+    /* font-size: 20px; */
+    background: none;
+    border: 1px solid #939191;
     border-radius: var(--border-rad);
-    color: var(--blue);
     cursor: pointer;
+    /* color: var(--blue); */
+}
+.nav-lang-btn:hover {
+    border: 1px solid #000;
 }
 /* --MEDIA QUERY DISABLE NAV PAGES FOR SCREEN LESS THAN 481PX-- */
 @media screen and (max-width: 480px) {
