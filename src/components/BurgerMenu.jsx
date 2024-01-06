@@ -7,7 +7,7 @@ import { slide as Menu } from 'react-burger-menu';
 import '../styles/burgermenu.css'
 // ---PAGES---
 import Home from '../pages/Home';
-import Attend from '../pages/Attend';
+import Class from '../pages/Class';
 // import Videos from '../pages/Videos';
 import Blog from '../pages/Blog';
 import About from '../pages/About';
@@ -61,7 +61,7 @@ function BurgerMenu() {
   if(activeAboutIcon === true) {
     backToTopId = "#about"
   } else if (activeAttendIcon === true){
-    backToTopId = "#attend"
+    backToTopId = "#class"
   } else if (activeBlogIcon === true) {
     backToTopId = "#blog"
   }
@@ -120,10 +120,10 @@ function BurgerMenu() {
                         (setActiveAttendIcon(false), "menu-item"))
                     } 
                     reloadDocument
-                    to={"/attend"}
+                    to={"/class"}
                 >
                   <div className="icon-and-menu">
-                    <img className="menu-icon" src={activeAttendIcon ? AttendIconDark : AttendIconLight} alt="Attend" /> {t('class')}
+                    <img className="menu-icon" src={activeAttendIcon ? AttendIconDark : AttendIconLight} alt="class" /> {t('class')}
                   </div>
                 </NavLink>
 
@@ -194,7 +194,7 @@ function BurgerMenu() {
         </Menu>
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/attend" element={<Attend/>}/>
+            <Route path="/class" element={<Class/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/blog" element={<Blog/>}/>
             <Route path="*" element={<PageNotFound/>}/>

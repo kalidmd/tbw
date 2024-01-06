@@ -50,8 +50,8 @@ function NavBar() {
                 className={
                   ({isActive}) => 
                     (isActive ? "nav-page-item active"  : "nav-page-item")
-                } 
-                // reloadDocument 
+                }
+                reloadDocument 
                 to={"/"}
             >
               {t('home')}
@@ -62,7 +62,7 @@ function NavBar() {
                   ({isActive}) => 
                     (isActive ? "nav-page-item active" :  "nav-page-item")
                 } 
-                // reloadDocument
+                reloadDocument
                 to={"/blog"}
             >
               {t('blog')}   
@@ -73,8 +73,8 @@ function NavBar() {
                   ({isActive}) => 
                     (isActive ? "nav-page-item active" : "nav-page-item")
                 } 
-                // reloadDocument
-                to={"/attend"}
+                reloadDocument
+                to={"/class"}
             >
               {t('class')}
             </NavLink>
@@ -84,7 +84,7 @@ function NavBar() {
                   ({isActive}) => 
                     (isActive ? "nav-page-item active" : "nav-page-item")
                 } 
-                // reloadDocument
+                reloadDocument
                 to={"/about"}
             >
               {t('about')}

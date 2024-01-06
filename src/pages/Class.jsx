@@ -5,11 +5,11 @@ import Register from '../components/Register';
 import TglBuilding from '../assets/image/tgl-buil.jpg'
 import ClassRoom from '../assets/image/our-classroom.jpg'
 
-function Attend() {
+function Class() {
   const { t } = useTranslation();
 
   return (
-    <div id="attend" className="attend-container">
+    <div id="class" className="class-container">
       <div className="classroom-container">
         <div className="classroom">
           <img className="classroom-img" src={ClassRoom} alt="classroom" />
@@ -50,4 +50,4 @@ function Attend() {
   )
 }
 
-export default Attend
+export default Class

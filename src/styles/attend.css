@@ -5,7 +5,7 @@
     --grey-color: #575353;
     --grey--bg: rgb(216 215 215);
   }
-.attend-container {
+.class-container {
     /* background-color: red; */
     width: var(--maximum-width);
     margin: 0 auto;
