@@ -137,7 +137,7 @@
     opacity: 0.9;
 }
 .menu-item.active {
-  color: #373a47;
+  color: hsl(229, 13%, 25%);
   background-color: #fff;
   padding: 7px 0;
   border-radius: var(--border-rad);

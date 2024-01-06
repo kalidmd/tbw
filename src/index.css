@@ -182,7 +182,9 @@ img {
 }
 .eng-version-not-yet {
   width: fit-content;
-  font-size: 14px;
+  margin: 0 auto;
+  font-size: 13px;
+  /* text-align: center; */
   color: #fff;
   background-color: rgb(239, 27, 27);
   padding: 3px 4px;
