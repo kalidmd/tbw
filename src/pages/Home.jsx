@@ -13,6 +13,8 @@ function Home() {
   const blogs = t('blog_data', {returnObjects: true})
   document.title = (t('title'));
   const currentLang = cookies.get('i18next');
+  const styleFont = currentLang === 'am' ?  " 'Times New Roman', Times, serif " : " 'Maven Pro', sans-serif "
+  document.body.style.fontFamily = styleFont;
 
   return (
     <main>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from "react-i18next";
 import '../styles/class.css'
+import cookies from 'js-cookie';
 
 import Register from '../components/Register';
 import TglBuilding from '../assets/image/tgl-buil.jpg'
@@ -8,6 +9,9 @@ import ClassRoom from '../assets/image/our-classroom.jpg'
 
 function Class() {
   const { t } = useTranslation();
+  const currentLang = cookies.get('i18next');
+  const styleFont = currentLang === 'am' ?  " 'Times New Roman', Times, serif " : " 'Maven Pro', sans-serif "
+  document.body.style.fontFamily = styleFont;
 
   return (
     <div id="class" className="class-container">

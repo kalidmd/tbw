@@ -2,7 +2,7 @@
     "title": "እውነትን በፍቃድ",
 
     "home": "መነሻ ገጽ",
-    "blog": "ብሎግ",
+    "blog": "አጭር ጽሁፍ",
     "class": "መደበኛ ትምህርት",
     "about": "ስለእኛ",
     "lang": "ቋንቋ:",
@@ -15,7 +15,7 @@
     "lectures-header": "ይህንን የሂወት ትምህርት ከአስተማሪዎቻችን ጋር ይጓዙ",
     "yonatan_gena": "ዮናታን ገና",
     "bereket_teka": "በረከት ተካ",
-    "blog_header": "የቅርብ ጊዜ ብሎግ",
+    "blog_header": "የቅርብ ጊዜ ጽሁፍ",
     "read_more": "ሙሉውን ያንብቡ",
     "read": "ንባብ",
     "truth_by_will_hash": "#እውነትን_በፍቃድ",
@@ -28,8 +28,9 @@
     "tgl_label": "ትጌላ ህንጻ 4ኛ ፎቅ ላይ እንገኛለን",
 
     "who_we_are": "እኛ ማነን",
+    "who_we_are_description": "",
     "our_aim": "አላማችን",
-    "our_aim_description": "This is a place through which we convey teachings from truth to human beings with humility and love, and the purpose is that through the knowledge revealed in this site, they will use their free will to make lifechanging decision. Thus, our primary aim is to present a call of love that presents humanity opportunity to regain its “natural identity” - lost for many generations - through “life lessons”. The lessons are for all mankind regardless of their race, gender, age, standard of living, religion, skin color or political opinion. We use plain language to express profound truths and communicate rather complex concepts; but of course, without compromising the logical explanations of the foundational issues discussed or distorting the content of fundamental ideas; and ensuring the channel is suitable for all types of viewers. We are too familiar with the message we are transferring, that we are confident its articulations are complete and precise.",
+    "our_aim_description": "ለሰው ልጆች ከእውነት የተቀዱ ትምህርቶችን በትህትና እና በፍቅር ማስተላለፍ ሲሆን፤ አላማውም በዚህ መንገድ በተገለጠው እውቀት መሰረት ሰዎች ነጻ ፍቃዳቸውን ተጠቅመው ሂወት ቀያሪ ውሳኔዎችን እንዲወስኑ ማድረግ ነው፤ ስለዚህም በዋነኝነት የሰው ልጅ ለብዙ ዘመናት ያጣውን የፍጥረት ማንነቱን “በሂወት ትምህርት” አማካኝነት ዳግም እንዲጎናፀፍ ሰወኛ የሆነ እድል ማቅረብ ነው። ትምህርታችንም የሰዎችን ዘር፣ ጾታ፣ እድሜ፣ የኑሮ ሁኔታ፣ ሃይማኖት፣ የቆዳ ቀለም ወይም የፖለቲካ አመለካከት ሳያማክል ሰው ለሆነ ሁሉ የቀረበ ነው። የትምህርታችን ይዘት ለሁሉም አይነት ተከታታዮቻችን እንዲሆን ተደርጎ የተቀረፀ ስለሆነ ከተወሳሳቡ ሃሳቦች ይልቅ፤ ጥልቅ እና ትልልቅ እውቀቶች በቀላል አማርኛ ተቃኝተው፤ በትምህርታችን ውስጥ የሚነሱ መሰረታዊ ሃሳቦች አመክኖአዊ ትንታንያቸው ችላ ሳይባል እና ይዘታቸው ሳይዛባ የሚቀርቡበት ነው። ስለምናስተላልፈው መልዕክት ብዙ ልምድ ስላለን፣ የትምህርት ይዘት እና አቀራረባችን የተሟላ እና ትክክለኛ ስለመሆኑ ሙሉ እርግጠኞች ነን።",
 
     "register_here": "በነጻ ይመዝገቡ!",    
     "reg_name": "ስም",
