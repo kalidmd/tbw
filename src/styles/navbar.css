@@ -59,6 +59,7 @@
 }
 .nav-page-item.active {
     border-bottom: 2px solid #fff;
+    pointer-events: none;
 }
 .nav-page-item:hover {
     border-bottom: 2px solid #cac8c8;

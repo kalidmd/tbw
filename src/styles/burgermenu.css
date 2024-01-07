@@ -155,7 +155,7 @@
   background-color: #fff;
   padding: 7px 0;
   border-radius: var(--border-rad);
-  /* padding-right: 3px; */
+  pointer-events: none;
 }
 /* Styling of overlay */
 .bm-overlay {
